@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavik Achotani | AI Systems & Machine Learning Researcher</title>
+  <meta name="description" content="Academic & Engineering Portfolio of Bhavik Achotani. B.E. in Information Technology, University of Mumbai. Research in Multimodal Deep Learning, Bayesian Uncertainty, and Medical Imaging (PACS).">
+  
+  <!-- Favicon & Fonts -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2226%22 font-size=%2224%22>🧠</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              900: '#0b1120',
+              card: '#0f172a',
+              border: '#1e293b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #070b14;
+      color: #f1f5f9;
+    }
+    .gradient-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.15), transparent 70%);
+    }
+    .card-hover {
+      transition: all 0.25s ease-in-out;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: #3b82f6;
+      box-shadow: 0 12px 30px -10px rgba(37, 99, 235, 0.2);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-900/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="flex items-center space-x-3 group">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-bold shadow-md shadow-blue-500/20 group-hover:scale-105 transition">
+          BA
+        </div>
+        <span class="font-bold text-base text-white tracking-tight">Bhavik Achotani</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center space-x-7 text-xs font-medium text-slate-300">
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#publications" class="hover:text-blue-400 transition">Research Papers</a>
+        <a href="#demos" class="hover:text-blue-400 transition">Live Demos (5)</a>
+        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </div>
+
+      <!-- Action Button -->
+      <div class="flex items-center space-x-3">
+        <a href="Bhavik_Achotani_Resume.pdf" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs shadow-md shadow-blue-600/30 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-file-pdf"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-12 pb-20 gradient-glow overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Profile Picture Column -->
+        <div class="lg:col-span-4 flex flex-col items-center text-center">
+          <div class="relative group">
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 opacity-70 blur-md group-hover:opacity-100 transition duration-500"></div>
+            <img src="bhavik_achotani.jpg" alt="Bhavik Achotani" class="relative w-56 h-56 rounded-full object-cover border-2 border-slate-700 shadow-2xl">
+            <div class="absolute bottom-2 right-2 px-2.5 py-1 rounded-full bg-brand-card/90 backdrop-blur border border-blue-500/50 text-[11px] font-mono text-blue-400 flex items-center gap-1.5 shadow-lg">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Fall '27 Aspirant
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-1">
+            <h2 class="text-xl font-bold text-white">Bhavik Achotani</h2>
+            <p class="text-xs text-slate-400">Thadomal Shahani Engineering College</p>
+            <p class="text-xs text-blue-400 font-mono">University of Mumbai • 8.08 / 10.0 CGPA</p>
+          </div>
+        </div>
+
+        <!-- Bio & Academic Headline Column -->
+        <div class="lg:col-span-8 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono">
+            <i class="fa-solid fa-graduation-cap"></i> Prospective MS in Computer Science / AI Applicant
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Engineering Rigorous, Clinically-Calibrated &amp; Low-Latency <span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">AI Systems</span>.
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl">
+            Final-year Information Technology student at <strong>Thadomal Shahani Engineering College (University of Mumbai)</strong>. My research bridges <strong>multimodal deep learning</strong>, <strong>Bayesian uncertainty quantification</strong>, and <strong>low-latency systems</strong>—spanning neuro-oncology imaging (PACS), edge agricultural AI in Marathi and Hindi, and state-locked financial trading engines.
+          </p>
+
+          <!-- Badges Bar -->
+          <div class="flex flex-wrap gap-2 pt-1 text-xs font-mono">
+            <a href="https://scholar.google.com/citations?user=ixNYTuQAAAAJ&hl=en" target="_blank" class="px-3 py-1.5 rounded-lg bg-blue-950/60 text-blue-300 border border-blue-800/60 hover:bg-blue-900 transition flex items-center gap-1.5">
+              <i class="fa-solid fa-graduation-cap text-blue-400"></i> Google Scholar
+            </a>
+            <a href="https://orcid.org/0009-0006-3098-6175" target="_blank" class="px-3 py-1.5 rounded-lg bg-emerald-950/60 text-emerald-300 border border-emerald-800/60 hover:bg-emerald-900 transition flex items-center gap-1.5">
+              <i class="fa-solid fa-id-badge text-emerald-400"></i> ORCID: 0009-0006-3098-6175
+            </a>
+            <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-3 py-1.5 rounded-lg bg-sky-950/60 text-sky-300 border border-sky-800/60 hover:bg-sky-900 transition flex items-center gap-1.5">
+              <i class="fa-solid fa-bookmark text-sky-400"></i> Zenodo DOI
+            </a>
+            <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1.5">
+              <i class="fa-brands fa-github text-slate-300"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/bhavik-achotani-94b4b4353" target="_blank" class="px-3 py-1.5 rounded-lg bg-blue-900/60 text-blue-200 border border-blue-700/60 hover:bg-blue-800 transition flex items-center gap-1.5">
+              <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
+            </a>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-3 pt-3">
+            <a href="#publications" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition shadow-lg shadow-blue-600/30 flex items-center gap-2">
+              <i class="fa-solid fa-book-open"></i> Explore Publications (3)
+            </a>
+            <a href="#demos" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs border border-slate-700 transition flex items-center gap-2">
+              <i class="fa-solid fa-rocket text-amber-400"></i> Test Live Demos (5)
+            </a>
+            <a href="#contact" class="px-5 py-2.5 rounded-lg bg-transparent hover:bg-slate-800/60 text-slate-300 font-semibold text-xs border border-slate-700 transition flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i> Get in Touch
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Ribbon -->
+  <section class="border-y border-slate-800 bg-brand-card/40 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-3xl font-extrabold text-blue-400 font-mono">8.08</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">B.E. CGPA (Zero Backlogs)</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-emerald-400 font-mono">3 Preprints</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Zenodo DOI &amp; SSRN Indexed</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-amber-400 font-mono">5 Spaces</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Live Hugging Face Demos</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-purple-400 font-mono">0.0192 ECE</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Bayesian Uncertainty Calibration</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Publications Section -->
+  <section id="publications" class="py-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-xs uppercase font-mono tracking-widest text-blue-400">Academic Output</h2>
+        <h3 class="text-3xl font-extrabold text-white tracking-tight">Research Publications &amp; Preprints</h3>
+        <p class="text-sm text-slate-400">All manuscripts feature rigorous mathematical formulations, open-source codebases, and public reproducibility archives.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6">
+
+        <!-- Paper 1: NeuroSeg -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border card-hover space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
+            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono border border-blue-500/20">
+              <i class="fa-solid fa-brain mr-1"></i> Medical AI &bull; Zenodo Research Archive
+            </span>
+            <span class="text-xs font-mono text-emerald-400">IEEE Two-Column Format &bull; DOI: 10.5281/zenodo.24046115</span>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-white hover:text-blue-400 transition">
+              NeuroSeg: A Bi-Hemispheric Spectral-Attention U-Net Workspace with Signed Distance Boundary Supervision, Bayesian Uncertainty Calibration, and Cross-Modal Neuro-Hematology Fusion
+            </h4>
+            <p class="text-xs font-mono text-slate-400 mt-1"><strong>Bhavik Achotani</strong> (2026) &bull; Zenodo Research Archive</p>
+          </div>
+
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Architected an end-to-end clinical neuro-oncology PACS workspace uniting a 4-stage Spectral-Transformer Attention U-Net (2D FFT high-pass gates + contralateral bi-hemispheric cross-attention) with a 6-layer MRI viewer. Formulated a GPU morphological Signed Distance Map (SDM) boundary loss and Bayesian Monte Carlo dropout engine (T=8 passes), boosting Dice Similarity from 83.10% to 91.84%, cutting HD95 error by 60.4% (3.42mm), and achieving 0.0192 ECE. Trained a Cross-Modal Gated Fusion Network on 12,000 patient records fusing 3D MRI with 12 blood biomarkers &amp; sGFAP (94.33% 4-class differential accuracy).
+          </p>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
+            <div class="flex flex-wrap gap-2">
+              <a href="NeuroSeg_IEEE_Research_Paper.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition flex items-center gap-1.5">
+                <i class="fa-solid fa-file-pdf"></i> Read Paper (PDF)
+              </a>
+              <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-demo" target="_blank" class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30 hover:bg-amber-500/30 transition flex items-center gap-1.5">
+                <i class="fa-solid fa-rocket"></i> Live PACS Demo
+              </a>
+              <a href="https://github.com/achotanibhavikoffice-ui/NeuroSeg" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1.5">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+            <button onclick="copyBibtex('neuroseg')" class="text-xs font-mono text-slate-400 hover:text-white transition flex items-center gap-1.5">
+              <i class="fa-solid fa-quote-right"></i> Copy BibTeX
+            </button>
+          </div>
+        </div>
+
+        <!-- Paper 2: DhanSathi -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border card-hover space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">
+              <i class="fa-solid fa-wheat-awn mr-1"></i> Edge AI &bull; SSRN Electronic Journal
+            </span>
+            <span class="text-xs font-mono text-slate-400">Elsevier SSRN &bull; Preprint 7670799</span>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-white hover:text-emerald-400 transition">
+              DhanSathi: Offline-First Multilingual Agricultural Intelligence and Deterministic RAG Architecture on Low-Resource Mobile Edges
+            </h4>
+            <p class="text-xs font-mono text-slate-400 mt-1"><strong>Bhavik Achotani</strong> (2026) &bull; SSRN Electronic Journal</p>
+          </div>
+
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Built an offline-first multilingual Android architecture (English, Hindi, Marathi) delivering AI crop advisory and financial tracking for Indian farmers. Developed a FastAPI backend integrating Groq's LLaMA 3.3 70B model with &lt;850ms inference latency across 10 major Maharashtra crops. Implemented a bilingual voice-based transaction parser with Room DB for offline storage and Firebase cloud sync.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
+            <div class="flex flex-wrap gap-2">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition flex items-center gap-1.5">
+                <i class="fa-solid fa-external-link"></i> View on SSRN
+              </a>
+              <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/dhansathi-demo" target="_blank" class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30 hover:bg-amber-500/30 transition flex items-center gap-1.5">
+                <i class="fa-solid fa-rocket"></i> Live Agri-AI Demo
+              </a>
+              <a href="https://github.com/achotanibhavikoffice-ui/Dhansathi" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1.5">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+            <button onclick="copyBibtex('dhansathi')" class="text-xs font-mono text-slate-400 hover:text-white transition flex items-center gap-1.5">
+              <i class="fa-solid fa-quote-right"></i> Copy BibTeX
+            </button>
+          </div>
+        </div>
+
+        <!-- Paper 3: Quantx -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border card-hover space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
+            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono border border-cyan-500/20">
+              <i class="fa-solid fa-chart-line mr-1"></i> Quantitative Systems &bull; SSRN Electronic Journal
+            </span>
+            <span class="text-xs font-mono text-slate-400">Elsevier SSRN &bull; Preprint 7670718</span>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-white hover:text-cyan-400 transition">
+              Quantx: High-Concurrency Transactional State-Locking and Vectorized Backtesting in Low-Latency Financial Simulators
+            </h4>
+            <p class="text-xs font-mono text-slate-400 mt-1"><strong>Bhavik Achotani</strong> (2026) &bull; SSRN Electronic Journal</p>
+          </div>
+
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Architected a high-concurrency simulation engine for Indian equities and F&amp;O data, featuring a state-locked transactional wallet managing &#8377;1L&#8211;&#8377;50L virtual capital with zero ledger drift. Engineered a vectorized AI backtesting module in Python and Pandas processing 5+ years of OHLCV time-series data. Constructed WebSocket streaming with Redis caching (&lt;45ms latency).
+          </p>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
+            <div class="flex flex-wrap gap-2">
+              <a href="Quantx_IEEE_Research_Paper.pdf" target="_blank" class="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition flex items-center gap-1.5">
+                <i class="fa-solid fa-file-pdf"></i> Read Paper (PDF)
+              </a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670718" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1.5">
+                <i class="fa-solid fa-external-link"></i> View on SSRN
+              </a>
+              <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/quantx-demo" target="_blank" class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30 hover:bg-amber-500/30 transition flex items-center gap-1.5">
+                <i class="fa-solid fa-rocket"></i> Live Trading Demo
+              </a>
+              <a href="https://github.com/achotanibhavikoffice-ui/Paper_trade" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1.5">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+            <button onclick="copyBibtex('quantx')" class="text-xs font-mono text-slate-400 hover:text-white transition flex items-center gap-1.5">
+              <i class="fa-solid fa-quote-right"></i> Copy BibTeX
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Live Demos Section (5 Spaces) -->
+  <section id="demos" class="py-20 border-b border-slate-800 bg-brand-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-xs uppercase font-mono tracking-widest text-amber-400">Proof of Work</h2>
+        <h3 class="text-3xl font-extrabold text-white tracking-tight">5 Live Interactive Cloud Demonstrations</h3>
+        <p class="text-sm text-slate-400">Deployed and running 24/7 on Hugging Face Spaces. Test each platform directly in your browser.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Demo 1 -->
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs">
+              <span class="px-2.5 py-0.5 rounded bg-blue-500/20 text-blue-400 font-mono">Clinical PACS</span>
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-circle text-emerald-400 text-[8px] mr-1"></i>Running</span>
+            </div>
+            <h4 class="font-bold text-base text-white">NeuroSeg Clinical MRI Viewer</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Explore 3D axial brain MRI slice depth, toggle Attention U-Net tumor contours, and inspect Bayesian MC-dropout uncertainty halos alongside blood biomarker fusion.
+            </p>
+          </div>
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-demo" target="_blank" class="w-full py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch NeuroSeg Space
+          </a>
+        </div>
+
+        <!-- Demo 2 -->
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs">
+              <span class="px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono">Agri-AI Multilingual</span>
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-circle text-emerald-400 text-[8px] mr-1"></i>Running</span>
+            </div>
+            <h4 class="font-bold text-base text-white">DhanSathi Farming Companion</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Test multilingual crop advisory in English, Marathi (मराठी), and Hindi (हिंदी) with simulated Groq LLaMA 3.3 70B inference and government scheme matching.
+            </p>
+          </div>
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/dhansathi-demo" target="_blank" class="w-full py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch DhanSathi Space
+          </a>
+        </div>
+
+        <!-- Demo 3 -->
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs">
+              <span class="px-2.5 py-0.5 rounded bg-cyan-500/20 text-cyan-400 font-mono">Trading Simulator</span>
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-circle text-emerald-400 text-[8px] mr-1"></i>Running</span>
+            </div>
+            <h4 class="font-bold text-base text-white">Quantx Market Terminal</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Simulated NSE/BSE trading terminal with live streaming charts, instant order placement, &#8377;10L virtual wallet, and vectorized AI strategy backtesting.
+            </p>
+          </div>
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/quantx-demo" target="_blank" class="w-full py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-medium text-xs text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Quantx Space
+          </a>
+        </div>
+
+        <!-- Demo 4 -->
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs">
+              <span class="px-2.5 py-0.5 rounded bg-indigo-500/20 text-indigo-400 font-mono">XGBoost ML</span>
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-circle text-emerald-400 text-[8px] mr-1"></i>Running</span>
+            </div>
+            <h4 class="font-bold text-base text-white">Telco Customer Churn AI</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Predict subscriber churn probability using an optimized XGBoost model (84.2% ROC-AUC) paired with real-time SHAP feature attribution breakdown.
+            </p>
+          </div>
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/telecom-churn-demo" target="_blank" class="w-full py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Churn Space
+          </a>
+        </div>
+
+        <!-- Demo 5 -->
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs">
+              <span class="px-2.5 py-0.5 rounded bg-purple-500/20 text-purple-400 font-mono">Circom ZK-SNARKs</span>
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-circle text-emerald-400 text-[8px] mr-1"></i>Running</span>
+            </div>
+            <h4 class="font-bold text-base text-white">InsureChain ZK Prover</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Cryptographically prove life insurance policyholder eligibility without exposing sensitive medical records using Circom Groth16 zero-knowledge proofs.
+            </p>
+          </div>
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/insurechain-demo" target="_blank" class="w-full py-2 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-medium text-xs text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch ZK Space
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience & Academic Record Section -->
+  <section id="experience" class="py-20 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-xs uppercase font-mono tracking-widest text-blue-400">Trajectory</h2>
+        <h3 class="text-3xl font-extrabold text-white tracking-tight">Academic Rigor &amp; Engineering Experience</h3>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Education Card -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-base text-white">Thadomal Shahani Engineering College</h4>
+              <p class="text-xs text-slate-400">University of Mumbai &bull; Expected May 2027</p>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs">
+            <div class="flex justify-between p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-300">Degree Program:</span>
+              <span class="font-bold text-white">B.E. in Information Technology</span>
+            </div>
+            <div class="flex justify-between p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-300">Cumulative GPA:</span>
+              <span class="font-mono text-emerald-400 font-bold">8.08 / 10.0 (First Class Distinction)</span>
+            </div>
+            <div class="flex justify-between p-3 rounded-lg bg-slate-900 border border-slate-800">
+              <span class="text-slate-300">Academic Standing:</span>
+              <span class="font-bold text-blue-400">100% Course Clearance (Zero Backlogs)</span>
+            </div>
+          </div>
+
+          <div class="pt-2 text-xs text-slate-400">
+            <strong class="text-slate-200 block mb-1">Key Completed Coursework:</strong>
+            Data Structures &amp; Algorithms, Machine Learning, Artificial Intelligence, Database Management Systems (DBMS), Operating Systems, Object-Oriented Programming.
+          </div>
+        </div>
+
+        <!-- Work Experience Card -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-5">
+          <div class="space-y-4">
+            
+            <div class="border-b border-slate-800 pb-4 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-white">Context AI</h4>
+                <span class="text-xs font-mono text-slate-400">Nov 2025 &ndash; Jan 2026</span>
+              </div>
+              <p class="text-xs text-blue-400 font-medium">Software Engineering Intern</p>
+              <ul class="text-xs text-slate-300 list-disc list-inside space-y-1 mt-2">
+                <li>Engineered React.js and Node.js application modules, reducing client front-end page load latency by 28%.</li>
+                <li>Optimized MongoDB schema indexing and validation to sustain high concurrent user queries.</li>
+              </ul>
+            </div>
+
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-sm text-white">Indian Institute of Computing and Technology (IICT)</h4>
+                <span class="text-xs font-mono text-slate-400">Dec 2026 &ndash; Jan 2027</span>
+              </div>
+              <p class="text-xs text-emerald-400 font-medium">AI &amp; Machine Learning Intern (Upcoming)</p>
+              <p class="text-xs text-slate-300 mt-1">
+                Selected for the competitive Winter AI/ML fellowship focusing on deep neural network architectures, ablation benchmarking, and applied deployment pipelines.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="py-20 border-b border-slate-800 bg-brand-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-xs uppercase font-mono tracking-widest text-blue-400">Tooling</h2>
+        <h3 class="text-3xl font-extrabold text-white tracking-tight">Technical Stack &amp; Systems</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+        
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border space-y-3">
+          <div class="text-blue-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+            <i class="fa-solid fa-code"></i> Languages
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Python</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">C++</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Java</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">JavaScript</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Kotlin</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Solidity</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">SQL</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border space-y-3">
+          <div class="text-emerald-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+            <i class="fa-solid fa-brain"></i> AI &amp; Deep Learning
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">PyTorch</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Attention U-Net</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Bayesian ML</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Scikit-learn</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">XGBoost</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Groq LLaMA 3.3</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">RAG</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border space-y-3">
+          <div class="text-amber-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+            <i class="fa-solid fa-server"></i> Web &amp; Backend
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">FastAPI</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">React 19</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Node.js</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Express.js</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Android (Compose)</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Streamlit</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-brand-card border border-brand-border space-y-3">
+          <div class="text-purple-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved"></i> Systems &amp; ZK
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Circom ZK-SNARKs</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Linux / Bash</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Docker</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Git</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Redis</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">MongoDB</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Hardhat</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      
+      <div class="space-y-2">
+        <h2 class="text-xs uppercase font-mono tracking-widest text-blue-400">Get in Touch</h2>
+        <h3 class="text-3xl font-extrabold text-white tracking-tight">Let's Connect for Fall 2027 Research</h3>
+        <p class="text-sm text-slate-400 max-w-xl mx-auto">
+          Currently seeking prospective MS in Computer Science and Artificial Intelligence opportunities, graduate research assistantships, and academic collaborations.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border space-y-6">
+        <div class="text-lg font-mono text-white">
+          <a href="mailto:achotanibhavikoffice@gmail.com" class="text-blue-400 hover:underline">
+            achotanibhavikoffice@gmail.com
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 text-xs">
+          <a href="https://scholar.google.com/citations?user=ixNYTuQAAAAJ&hl=en" target="_blank" class="px-4 py-2 rounded-lg bg-blue-950/60 text-blue-300 border border-blue-800/60 hover:bg-blue-900 transition flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+          </a>
+          <a href="https://orcid.org/0009-0006-3098-6175" target="_blank" class="px-4 py-2 rounded-lg bg-emerald-950/60 text-emerald-300 border border-emerald-800/60 hover:bg-emerald-900 transition flex items-center gap-2">
+            <i class="fa-solid fa-id-badge"></i> ORCID
+          </a>
+          <a href="https://www.linkedin.com/in/bhavik-achotani-94b4b4353" target="_blank" class="px-4 py-2 rounded-lg bg-blue-900/60 text-blue-200 border border-blue-700/60 hover:bg-blue-800 transition flex items-center gap-2">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-2">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-brand-900 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p>&copy; 2026 Bhavik Achotani. All rights reserved.</p>
+      <p class="font-mono text-[11px] text-slate-600">Hosted with GitHub Pages &bull; Verified Academic Research Profile</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-lg bg-blue-600 text-white font-mono text-xs shadow-xl transition-all duration-300 opacity-0 pointer-events-none transform translate-y-2">
+    BibTeX Copied to Clipboard!
+  </div>
+
+  <script>
+    const bibtexData = {
+      neuroseg: `@article{achotani2026neuroseg,\n  author  = {Achotani, Bhavik},\n  title   = {NeuroSeg: A Bi-Hemispheric Spectral-Attention U-Net Workspace with Signed Distance Boundary Supervision, Bayesian Uncertainty Calibration, and Cross-Modal Neuro-Hematology Fusion},\n  journal = {Zenodo Research Archive},\n  year    = {2026},\n  doi     = {10.5281/zenodo.24046115}\n}`,
+      dhansathi: `@article{achotani2026dhansathi,\n  author  = {Achotani, Bhavik},\n  title   = {DhanSathi: Offline-First Multilingual Agricultural Intelligence and Deterministic RAG Architecture on Low-Resource Mobile Edges},\n  journal = {SSRN Electronic Journal},\n  year    = {2026},\n  number  = {7670799},\n  doi     = {10.2139/ssrn.7670799}\n}`,
+      quantx: `@article{achotani2026quantx,\n  author  = {Achotani, Bhavik},\n  title   = {Quantx: High-Concurrency Transactional State-Locking and Vectorized Backtesting in Low-Latency Financial Simulators},\n  journal = {SSRN Electronic Journal},\n  year    = {2026},\n  number  = {7670718},\n  doi     = {10.2139/ssrn.7670718}\n}`
+    };
+
+    function copyBibtex(key) {
+      if (bibtexData[key]) {
+        navigator.clipboard.writeText(bibtexData[key]).then(() => {
+          showToast();
+        });
+      }
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
