@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,9 @@
   <meta name="description" content="Academic &amp; Engineering Portfolio of Bhavik Achotani. B.E. in Information Technology, University of Mumbai. Research in Multimodal Deep Learning, Bayesian Uncertainty, and Medical Imaging (PACS).">
   
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2226%22 font-size=%2224%22>⚡</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
   
-  <!-- Fonts: Plus Jakarta Sans + Instrument Serif (Editorial Accent) + Geist Mono -->
+  <!-- Fonts: Plus Jakarta Sans + Instrument Serif (Editorial Accent) + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +20,6 @@
   
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -34,14 +33,7 @@
               400: '#A3E635',
               500: '#84CC16',
               accent: '#C6F234',
-              glow: 'rgba(198, 242, 52, 0.15)'
-            },
-            obsidian: {
-              base: '#070908',
-              surface: '#0B0F0C',
-              card: 'rgba(17, 24, 19, 0.72)',
-              border: 'rgba(255, 255, 255, 0.08)',
-              hover: 'rgba(198, 242, 52, 0.25)'
+              glow: 'rgba(198, 242, 52, 0.25)'
             }
           }
         }
@@ -51,8 +43,8 @@
   
   <style>
     html, body {
-      background-color: #070908 !important;
-      color: #F3F4F6;
+      background-color: #F8FAFC !important;
+      color: #0F172A;
       overflow-x: hidden;
     }
     
@@ -63,33 +55,33 @@
     }
 
     .glass-card {
-      background: rgba(13, 18, 14, 0.75);
+      background: rgba(255, 255, 255, 0.88);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(226, 232, 240, 0.9);
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .glass-card:hover {
-      border-color: rgba(198, 242, 52, 0.35);
-      box-shadow: 0 16px 36px -12px rgba(198, 242, 52, 0.08), 0 0 0 1px rgba(198, 242, 52, 0.15);
+      border-color: rgba(132, 204, 22, 0.5);
+      box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(132, 204, 22, 0.2);
       transform: translateY(-2px);
     }
 
     .glow-lime {
-      box-shadow: 0 0 24px -4px rgba(198, 242, 52, 0.4);
+      box-shadow: 0 4px 20px -2px rgba(198, 242, 52, 0.5);
     }
     
     .glow-lime-subtle {
-      box-shadow: 0 0 40px -10px rgba(198, 242, 52, 0.15);
+      box-shadow: 0 2px 12px -2px rgba(132, 204, 22, 0.25);
     }
 
-    /* Ambient background gradient mesh */
+    /* Ambient background gradient mesh for Light Mode */
     .bg-mesh {
-      background-color: #070908;
+      background-color: #F8FAFC;
       background-image: 
-        radial-gradient(circle at 15% 20%, rgba(198, 242, 52, 0.08) 0%, transparent 45%),
-        radial-gradient(circle at 85% 60%, rgba(74, 222, 128, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
+        radial-gradient(circle at 15% 15%, rgba(132, 204, 22, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 45%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 85%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
     }
 
     /* Pulsing status ring */
@@ -104,126 +96,144 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background: #C6F234;
+      background: #16A34A;
       animation: pulse-ring 2s infinite ease-out;
       z-index: 0;
     }
 
-    /* Scrollbar */
+    /* Custom Scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #070908;
+      background: #F1F5F9;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1e2922;
+      background: #CBD5E1;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #C6F234;
+      background: #94A3B8;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans selection:bg-lime-accent selection:text-black bg-[#070908] bg-mesh text-white">
+<body class="min-h-screen flex flex-col font-sans selection:bg-[#C6F234] selection:text-black bg-[#F8FAFC] bg-mesh text-slate-900">
 
-  <!-- Interactive 3D Ambient Wave Canvas -->
-  <canvas id="waveCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+  <!-- Interactive 3D Ambient Neon Wave Canvas -->
+  <canvas id="waveCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-60"></canvas>
 
   <!-- Sticky Glassmorphic Navigation Bar -->
-  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-[#070908]/80 border-b border-white/5">
+  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-slate-200/80 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
       <!-- Brand & Status Pill -->
       <a href="#hero" class="flex items-center space-x-3 group">
-        <div class="w-8 h-8 rounded-lg bg-[#C6F234] text-black font-extrabold text-xs flex items-center justify-center tracking-tighter shadow-sm group-hover:scale-105 transition">
+        <div class="w-8 h-8 rounded-lg bg-[#C6F234] text-black font-extrabold text-xs flex items-center justify-center tracking-tighter shadow-xs border border-black/10 group-hover:scale-105 transition">
           BA
         </div>
-        <div class="flex items-center gap-2.5">
-          <span class="font-bold text-sm tracking-tight text-white group-hover:text-lime-accent transition">Bhavik Achotani</span>
-          <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[11px] font-mono text-zinc-400">
+        <div class="flex items-center space-x-2">
+          <span class="font-bold text-sm tracking-tight text-slate-900">Bhavik Achotani</span>
+          <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-[11px] font-mono text-slate-700 font-medium">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-lime-accent"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            Fall '27 MS Applicant
+            <span>Fall '27 MS Applicant</span>
           </div>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <div class="hidden lg:flex items-center space-x-6 text-xs font-medium text-zinc-400">
-        <a href="#about" class="hover:text-white transition">About</a>
-        <a href="#publications" class="hover:text-white transition">Publications</a>
-        <a href="#demos" class="hover:text-white transition">Live Demos</a>
-        <a href="#experience" class="hover:text-white transition">Experience</a>
-        <a href="#certifications" class="hover:text-white transition">Certifications</a>
-        <a href="#community" class="hover:text-white transition">Community &amp; Sports</a>
-        <a href="#skills" class="hover:text-white transition">Skills</a>
-        <a href="#contact" class="hover:text-white transition">Contact</a>
+      <div class="hidden md:flex items-center space-x-6 text-xs font-medium text-slate-600">
+        <a href="#about" class="hover:text-slate-900 transition">About</a>
+        <a href="#publications" class="hover:text-slate-900 transition">Publications</a>
+        <a href="#demos" class="hover:text-slate-900 transition">Live Demos</a>
+        <a href="#experience" class="hover:text-slate-900 transition">Experience</a>
+        <a href="#certifications" class="hover:text-slate-900 transition">Certifications</a>
+        <a href="#community" class="hover:text-slate-900 transition">Community &amp; Sports</a>
+        <a href="#skills" class="hover:text-slate-900 transition">Skills</a>
+        <a href="#contact" class="hover:text-slate-900 transition">Contact</a>
       </div>
 
       <!-- Action Pill Button -->
       <div class="flex items-center space-x-3">
-        <a href="Bhavik_Achotani_Resume.pdf" target="_blank" class="px-4 py-1.5 rounded-full bg-[#C6F234] hover:bg-[#b0db2a] text-black font-semibold text-xs tracking-tight transition shadow-sm glow-lime-subtle flex items-center gap-1.5">
+        <a href="Bhavik_Achotani_Resume.pdf" target="_blank" class="px-4 py-1.5 rounded-full bg-[#C6F234] hover:bg-[#b0db2a] text-black font-bold text-xs tracking-tight transition shadow-xs border border-black/10 flex items-center gap-1.5">
           <i class="fa-solid fa-file-pdf"></i> Download CV
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section with Dual Columns (Copy + Interactive Pipeline Node Graph) -->
-  <section id="hero" class="relative z-10 pt-12 pb-20 border-b border-white/5">
+  <!-- Hero Section with Dual Columns (Copy & Identity + Interactive Pipeline Node Graph) -->
+  <section id="hero" class="relative z-10 pt-10 pb-16 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
-        <!-- Left Column: Copy & Identity -->
+        <!-- Left Column: Portrait + Copy & Identity -->
         <div class="lg:col-span-7 space-y-6">
           
-          <!-- Translucent Status Tag -->
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-zinc-300 text-xs font-mono">
-            <span class="w-2 h-2 rounded-full bg-lime-accent"></span>
-            <span>TSEC Mumbai &bull; 8.08 CGPA &bull; 5 Live Cloud Demos</span>
+          <!-- Profile Portrait & Status Header -->
+          <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+            <!-- Profile Photo with Gradient Ring -->
+            <div class="relative shrink-0 group">
+              <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl p-1 bg-gradient-to-tr from-lime-400 via-emerald-400 to-sky-400 shadow-md transition-transform group-hover:scale-105">
+                <img src="bhavik_achotani.jpg" alt="Bhavik Achotani" class="w-full h-full rounded-2xl object-cover border-2 border-white bg-slate-100">
+              </div>
+              <div class="absolute -bottom-2 -right-2 px-2.5 py-0.5 rounded-full bg-white border border-slate-200 text-[10px] font-mono text-slate-800 flex items-center gap-1.5 shadow-sm font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Fall '27
+              </div>
+            </div>
+
+            <!-- Identity Header & Affiliations -->
+            <div class="space-y-1.5 text-center sm:text-left pt-1">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>TSEC Mumbai &bull; 8.08 CGPA &bull; Zero Backlogs</span>
+              </div>
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">Bhavik Achotani</h2>
+              <p class="text-xs text-slate-600 font-medium">B.E. Information Technology &bull; University of Mumbai</p>
+              <p class="text-xs text-emerald-700 font-mono font-semibold">Prospective MS CS &bull; MS AI Applicant</p>
+            </div>
           </div>
 
           <!-- Signature Headline: Bold Sans + Editorial Italic Serif -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
-            Engineering AI systems that clinicians &amp; farmers can <span class="font-serif-italic text-[#C6F234] tracking-normal">depend on.</span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Engineering AI systems that clinicians &amp; farmers can <span class="font-serif-italic text-emerald-600 tracking-normal text-4xl sm:text-5xl lg:text-6xl">depend on.</span>
           </h1>
 
-          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-2xl">
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
             Final-year Information Technology researcher at <strong>Thadomal Shahani Engineering College (University of Mumbai)</strong>. My research bridges <strong>multimodal deep learning</strong>, <strong>Bayesian uncertainty calibration</strong>, and <strong>low-latency systems</strong>, spanning clinical neuro-oncology imaging (PACS), edge agricultural AI in Marathi and Hindi, and state-locked financial trading engines.
           </p>
 
           <!-- Dual Action Buttons -->
-          <div class="flex flex-wrap items-center gap-3 pt-2">
-            <a href="#publications" class="px-6 py-2.5 rounded-full bg-[#C6F234] hover:bg-[#b0db2a] text-black font-bold text-xs tracking-tight transition shadow-sm glow-lime flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <a href="#publications" class="px-6 py-2.5 rounded-full bg-[#C6F234] hover:bg-[#b0db2a] text-black font-bold text-xs tracking-tight transition shadow-sm border border-black/10 flex items-center gap-2">
               <i class="fa-solid fa-book-open"></i> Explore Publications (3)
             </a>
-            <a href="#demos" class="px-6 py-2.5 rounded-full bg-white/[0.06] hover:bg-white/[0.1] text-white border border-white/10 text-xs font-semibold tracking-tight transition flex items-center gap-2 backdrop-blur-md">
-              <i class="fa-solid fa-play text-[#C6F234]"></i> Test 5 Live Demos
+            <a href="#demos" class="px-6 py-2.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 text-xs font-semibold tracking-tight transition flex items-center gap-2 shadow-xs">
+              <i class="fa-solid fa-play text-emerald-600"></i> Test 5 Live Demos
             </a>
           </div>
 
-          <!-- Verification Chips -->
-          <div class="flex flex-wrap gap-2 pt-2 text-xs font-mono">
-            <a href="https://scholar.google.com/citations?user=ixNYTuQAAAAJ&hl=en" target="_blank" class="px-3 py-1 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-zinc-300 border border-white/10 transition flex items-center gap-1.5">
-              <i class="fa-solid fa-graduation-cap text-[#C6F234]"></i> Google Scholar
+          <!-- Academic & System Verification Chips -->
+          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono">
+            <a href="https://scholar.google.com/citations?user=ixNYTuQAAAAJ&hl=en" target="_blank" class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-xs hover:border-slate-300 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-solid fa-graduation-cap text-blue-600"></i> Google Scholar
             </a>
-            <a href="https://orcid.org/0009-0006-3098-6175" target="_blank" class="px-3 py-1 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-zinc-300 border border-white/10 transition flex items-center gap-1.5">
-              <i class="fa-solid fa-id-badge text-emerald-400"></i> ORCID
+            <a href="https://orcid.org/0009-0006-3098-6175" target="_blank" class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-xs hover:border-slate-300 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-solid fa-id-badge text-emerald-600"></i> ORCID
             </a>
-            <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-3 py-1 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-zinc-300 border border-white/10 transition flex items-center gap-1.5">
-              <i class="fa-solid fa-bookmark text-sky-400"></i> Zenodo DOI
+            <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-xs hover:border-slate-300 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-solid fa-bookmark text-sky-600"></i> Zenodo DOI
             </a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-3 py-1 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-zinc-300 border border-white/10 transition flex items-center gap-1.5">
-              <i class="fa-solid fa-file-contract text-indigo-400"></i> SSRN
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-xs hover:border-slate-300 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-solid fa-file-contract text-indigo-600"></i> SSRN
             </a>
-            <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-3 py-1 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-zinc-300 border border-white/10 transition flex items-center gap-1.5">
-              <i class="fa-brands fa-github text-zinc-400"></i> GitHub
+            <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-xs hover:border-slate-300 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-brands fa-github text-slate-800"></i> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/bhavik-achotani-94b4b4353" target="_blank" class="px-3 py-1 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] text-zinc-300 border border-white/10 transition flex items-center gap-1.5">
-              <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
+            <a href="https://www.linkedin.com/in/bhavik-achotani-94b4b4353" target="_blank" class="px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-xs hover:border-slate-300 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
             </a>
           </div>
 
@@ -231,116 +241,108 @@
 
         <!-- Right Column: Interactive Pipeline Node Graph & Live Stream Console -->
         <div class="lg:col-span-5">
-          <div class="glass-card rounded-2xl p-5 border border-white/10 shadow-2xl relative overflow-hidden space-y-4">
+          <div class="rounded-2xl bg-[#090D0A] border border-slate-300 shadow-xl shadow-slate-900/10 p-5 space-y-4 font-mono text-xs text-white">
             
             <!-- Terminal Header & Pipeline Switcher -->
             <div class="flex items-center justify-between border-b border-white/10 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-lime-400"></span>
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
                 <span class="text-xs font-mono text-zinc-400 ml-2 font-medium">pipeline_telemetry.sys</span>
               </div>
-              <div class="flex items-center gap-1 text-[11px] font-mono text-lime-accent">
-                <span class="animate-pulse">●</span> live inference
+              <div class="flex items-center gap-1.5 text-[10px] text-lime-400 font-mono">
+                <span class="w-1.5 h-1.5 rounded-full bg-lime-400 animate-ping"></span>
+                <span>live inference</span>
               </div>
             </div>
 
             <!-- Pipeline Tabs -->
-            <div class="flex items-center gap-1.5 bg-black/40 p-1 rounded-xl border border-white/5 text-[11px] font-mono">
-              <button onclick="switchPipeline('neuroseg')" id="tab-neuroseg" class="flex-1 py-1 px-2 rounded-lg bg-white/10 text-white font-medium transition text-center">NeuroSeg</button>
-              <button onclick="switchPipeline('dhansathi')" id="tab-dhansathi" class="flex-1 py-1 px-2 rounded-lg text-zinc-400 hover:text-white transition text-center">DhanSathi</button>
-              <button onclick="switchPipeline('quantx')" id="tab-quantx" class="flex-1 py-1 px-2 rounded-lg text-zinc-400 hover:text-white transition text-center">Quantx</button>
+            <div class="flex p-1 rounded-xl bg-white/5 border border-white/10 text-xs font-mono">
+              <button onclick="switchPipeline('neuroseg')" id="tab-neuroseg" class="flex-1 py-1.5 px-2 rounded-lg bg-white/10 text-white font-medium transition text-center shadow-xs">NeuroSeg</button>
+              <button onclick="switchPipeline('dhansathi')" id="tab-dhansathi" class="flex-1 py-1.5 px-2 rounded-lg text-zinc-400 hover:text-white transition text-center">DhanSathi</button>
+              <button onclick="switchPipeline('quantx')" id="tab-quantx" class="flex-1 py-1.5 px-2 rounded-lg text-zinc-400 hover:text-white transition text-center">Quantx</button>
             </div>
 
             <!-- Interactive Visual Node Flowchart -->
-            <div id="pipeline-canvas" class="p-3 bg-black/60 rounded-xl border border-white/5 space-y-3 font-mono text-xs">
-              
-              <!-- Dynamic nodes populated via JS -->
-              <div id="node-container" class="space-y-2">
-                <!-- Node 1 -->
-                <div class="p-2.5 rounded-lg bg-[#141C15] border border-white/10 flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-zinc-200">
-                    <span class="w-2 h-2 rounded-full bg-lime-accent"></span>
-                    <span id="node-1-text">3D Axial MRI Slices (128x128)</span>
-                  </div>
-                  <span id="node-1-meta" class="text-[10px] text-zinc-500">Input Stream</span>
+            <div class="space-y-2 py-1" id="pipeline-nodes">
+              <!-- Node 1 -->
+              <div class="p-2.5 rounded-lg bg-[#141C15] border border-white/10 flex items-center justify-between">
+                <div class="flex items-center gap-2 text-zinc-200">
+                  <span class="w-2 h-2 rounded-full bg-lime-accent"></span>
+                  <span class="font-medium text-[11px]" id="node1-title">3D Axial MRI Slices (128x128)</span>
                 </div>
-
-                <!-- Connector -->
-                <div class="flex justify-center -my-1 text-lime-accent/60 text-xs">
-                  <i class="fa-solid fa-arrow-down"></i>
-                </div>
-
-                <!-- Node 2 -->
-                <div class="p-2.5 rounded-lg bg-[#141C15] border border-white/10 flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-zinc-200">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                    <span id="node-2-text">Spectral Attention + FFT Gates</span>
-                  </div>
-                  <span id="node-2-meta" class="text-[10px] text-lime-accent">18.4 ms</span>
-                </div>
-
-                <!-- Connector -->
-                <div class="flex justify-center -my-1 text-lime-accent/60 text-xs">
-                  <i class="fa-solid fa-arrow-down"></i>
-                </div>
-
-                <!-- Node 3 -->
-                <div class="p-2.5 rounded-lg bg-[#141C15] border border-white/10 flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-zinc-200">
-                    <span class="w-2 h-2 rounded-full bg-sky-400"></span>
-                    <span id="node-3-text">Bayesian MC-Dropout (T=8 passes)</span>
-                  </div>
-                  <span id="node-3-meta" class="text-[10px] text-emerald-400">0.0192 ECE</span>
-                </div>
-
-                <!-- Connector -->
-                <div class="flex justify-center -my-1 text-lime-accent/60 text-xs">
-                  <i class="fa-solid fa-arrow-down"></i>
-                </div>
-
-                <!-- Node 4 -->
-                <div class="p-2.5 rounded-lg bg-[#141C15] border border-lime-accent/30 flex items-center justify-between">
-                  <div class="flex items-center gap-2 text-white font-semibold">
-                    <span class="w-2 h-2 rounded-full bg-lime-accent animate-ping"></span>
-                    <span id="node-4-text">Tumor Contour + Epistemic Halo</span>
-                  </div>
-                  <span id="node-4-meta" class="text-[10px] text-lime-accent font-bold">91.84% Dice</span>
-                </div>
+                <span class="text-[10px] font-mono text-zinc-500" id="node1-meta">Input Stream</span>
               </div>
 
+              <!-- Connector -->
+              <div class="flex justify-center text-zinc-600 -my-1 text-xs">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="p-2.5 rounded-lg bg-[#141C15] border border-white/10 flex items-center justify-between">
+                <div class="flex items-center gap-2 text-zinc-200">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span class="font-medium text-[11px]" id="node2-title">Spectral Attention + FFT Gates</span>
+                </div>
+                <span class="text-[10px] font-mono text-lime-400" id="node2-meta">18.4 ms</span>
+              </div>
+
+              <!-- Connector -->
+              <div class="flex justify-center text-zinc-600 -my-1 text-xs">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="p-2.5 rounded-lg bg-[#141C15] border border-white/10 flex items-center justify-between">
+                <div class="flex items-center gap-2 text-zinc-200">
+                  <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+                  <span class="font-medium text-[11px]" id="node3-title">Bayesian MC-Dropout (T=8 passes)</span>
+                </div>
+                <span class="text-[10px] font-mono text-emerald-400" id="node3-meta">0.0192 ECE</span>
+              </div>
+
+              <!-- Connector -->
+              <div class="flex justify-center text-zinc-600 -my-1 text-xs">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+
+              <!-- Node 4 -->
+              <div class="p-2.5 rounded-lg bg-[#141C15] border border-lime-accent/30 flex items-center justify-between">
+                <div class="flex items-center gap-2 text-white font-semibold">
+                  <span class="w-2 h-2 rounded-full bg-[#C6F234]"></span>
+                  <span class="text-[11px]" id="node4-title">Tumor Contour + Epistemic Halo</span>
+                </div>
+                <span class="text-[10px] font-mono text-lime-300 font-bold" id="node4-meta">91.84% Dice</span>
+              </div>
             </div>
 
             <!-- Real-time Animated Console Logs -->
-            <div class="space-y-1.5 pt-1">
-              <div class="text-[11px] font-mono text-zinc-500 uppercase tracking-wider flex items-center justify-between">
-                <span>System Event Log</span>
-                <span class="text-[10px] text-zinc-600">Auto-scrolling</span>
+            <div class="border-t border-white/10 pt-3">
+              <div class="flex items-center justify-between text-[10px] text-zinc-400 mb-2">
+                <span>SYSTEM EVENT LOG</span>
+                <span class="font-mono text-zinc-500">AUTO-SCROLLING</span>
               </div>
-              <div id="terminal-stream" class="h-20 bg-black/80 rounded-lg p-2.5 font-mono text-[11px] text-zinc-400 space-y-1 overflow-hidden border border-white/5">
-                <div class="text-lime-accent/90 flex items-center gap-2">
-                  <span class="text-zinc-600">10:21:45</span>
-                  <span>• Fast Fourier high-pass gate converged (12 ms)</span>
+              <div id="terminal-stream" class="h-16 overflow-hidden space-y-1 text-[10px] font-mono text-zinc-400 leading-tight">
+                <div class="text-zinc-300 flex items-center gap-2">
+                  <span class="text-zinc-600">21:04:53</span>
+                  <span>• [10:22:30] Vectorized backtest pipeline processed 5yr OHLCV data</span>
                 </div>
                 <div class="text-zinc-300 flex items-center gap-2">
-                  <span class="text-zinc-600">10:21:48</span>
-                  <span>• Epistemic uncertainty calibrated: 0.0192 ECE</span>
-                </div>
-                <div class="text-emerald-400 flex items-center gap-2">
-                  <span class="text-zinc-600">10:21:52</span>
-                  <span>• Dice similarity metric achieved: 91.84%</span>
+                  <span class="text-zinc-600">21:04:57</span>
+                  <span>• [10:22:30] Vectorized backtest pipeline processed 5yr OHLCV data</span>
                 </div>
               </div>
             </div>
 
-            <!-- Profile Headshot Badge Ribbon -->
-            <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs">
+            <!-- Profile Headshot Badge Ribbon inside Console -->
+            <div class="pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
               <div class="flex items-center gap-2.5">
-                <img src="bhavik_achotani.jpg" alt="Bhavik Achotani" class="w-8 h-8 rounded-full object-cover border border-lime-accent/50">
+                <img src="bhavik_achotani.jpg" alt="Bhavik Achotani" class="w-7 h-7 rounded-full border border-white/20 object-cover">
                 <div>
-                  <span class="text-white font-semibold text-xs block">Bhavik Achotani</span>
-                  <span class="text-[10px] text-zinc-500 font-mono">Principal System Architect</span>
+                  <div class="text-white font-bold text-xs">Bhavik Achotani</div>
+                  <div class="text-[10px] text-zinc-400">Principal System Architect</div>
                 </div>
               </div>
               <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-zinc-300 text-[11px] font-mono border border-white/10 transition">
@@ -355,98 +357,107 @@
     </div>
   </section>
 
-  <!-- Key Metrics Ribbon in Cybernetic Bento Layout -->
-  <section class="border-b border-white/5 bg-[#0B0F0C]/80 py-8 relative z-10">
+  <!-- Key Metrics Ribbon in Bento Layout -->
+  <section class="border-b border-slate-200 bg-white py-8 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-4">
       
-      <div class="glass-card rounded-xl p-4 border border-white/5">
-        <div class="text-3xl font-extrabold text-[#C6F234] font-mono">8.08</div>
-        <div class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-mono font-medium">B.E. CGPA (Zero Backlogs)</div>
+      <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs">
+        <div class="text-3xl font-extrabold text-emerald-600 tracking-tight font-mono">8.08</div>
+        <div class="text-xs font-semibold text-slate-800 mt-1">Undergraduate CGPA</div>
+        <div class="text-[11px] text-slate-600 mt-0.5">University of Mumbai (Zero Backlogs)</div>
       </div>
-      
-      <div class="glass-card rounded-xl p-4 border border-white/5">
-        <div class="text-3xl font-extrabold text-emerald-400 font-mono">3 Preprints</div>
-        <div class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-mono font-medium">Zenodo DOI &amp; SSRN Indexed</div>
+
+      <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs">
+        <div class="text-3xl font-extrabold text-slate-900 tracking-tight font-mono">3 Preprints</div>
+        <div class="text-xs font-semibold text-slate-800 mt-1">Research Publications</div>
+        <div class="text-[11px] text-slate-600 mt-0.5">Zenodo DOI &bull; SSRN Electronic Journal</div>
       </div>
-      
-      <div class="glass-card rounded-xl p-4 border border-white/5">
-        <div class="text-3xl font-extrabold text-sky-400 font-mono">5 Spaces</div>
-        <div class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-mono font-medium">Live Hugging Face Demos</div>
+
+      <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs">
+        <div class="text-3xl font-extrabold text-sky-600 tracking-tight font-mono">5 Spaces</div>
+        <div class="text-xs font-semibold text-slate-800 mt-1">Live Cloud Deployments</div>
+        <div class="text-[11px] text-slate-600 mt-0.5">Hugging Face 24/7 Demos</div>
       </div>
-      
-      <div class="glass-card rounded-xl p-4 border border-white/5">
-        <div class="text-3xl font-extrabold text-purple-400 font-mono">0.0192 ECE</div>
-        <div class="text-xs text-zinc-400 mt-1 uppercase tracking-wider font-mono font-medium">Bayesian Uncertainty Calibration</div>
+
+      <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs">
+        <div class="text-3xl font-extrabold text-indigo-600 tracking-tight font-mono">0.0192 ECE</div>
+        <div class="text-xs font-semibold text-slate-800 mt-1">Bayesian Calibration</div>
+        <div class="text-[11px] text-slate-600 mt-0.5">Expected Calibration Error (NeuroSeg)</div>
       </div>
 
     </div>
   </section>
 
   <!-- About: Personal Journey, Resilience & Grounded Roots -->
-  <section id="about" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="about" class="py-20 border-b border-slate-200 relative z-10 bg-slate-50/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Personal Narrative</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Journey, Resilience &amp; <span class="font-serif-italic text-[#C6F234]">Purpose</span>
-        </h2>
-        <p class="text-sm text-zinc-400">Transforming life's hardships and socio-economic hurdles into relentless engineering discipline.</p>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Origin &amp; Lived Philosophy</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-8">
+        Adversity Turned into Systematic Discipline.
+      </h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         
-        <div class="lg:col-span-8 space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed glass-card p-6 rounded-2xl border border-white/5">
+        <div class="lg:col-span-7 space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
           <p>
             My pathway into engineering was forged through significant personal adversity. Coming from a modest background where higher educational and financial security were never given, I learned early that sustained resilience and unyielding hard work are the only dependable equalizers in life.
           </p>
           <p>
-            My practical understanding of operational friction began on the floor of a family retail pharmacy. Auditing manual inventory logs, I witnessed firsthand how fragmented supply data and guesswork caused critical therapeutic shortages for ordinary families while expensive medicines expired on shelves. That experience grounded me in an essential truth: <em>real engineering is not an abstract exercise; it is an operational duty to build systems that alleviate friction for everyday human beings</em>.
+            Growing up around my family's community pharmacy counter in Ulhasnagar, I watched ordinary people make agonizing trade-offs between urgent medicines and monthly household survival. That experience permanently stripped away any tolerance for superficial engineering: technology is only as valuable as the real-world suffering it relieves.
           </p>
           <p>
             Rather than letting difficulties limit my trajectory, I converted life's pressures into academic focus. I earned admission into <strong>Thadomal Shahani Engineering College (University of Mumbai)</strong>, maintained a spotless <strong>8.08 / 10.0 CGPA with zero backlogs</strong>, authored three research preprints, and engineered 5 live cloud deployments. Every project I design, whether empowering Marathi and Hindi-speaking farmers through <em>DhanSathi</em> or calibrating Bayesian MRI segmentation in <em>NeuroSeg</em>, is driven by this lived ethos: turning struggle into technology that serves.
           </p>
         </div>
 
-        <div class="lg:col-span-4 space-y-4">
-          <div class="glass-card rounded-2xl p-6 border border-white/5 space-y-4">
-            <h4 class="font-bold text-xs uppercase tracking-wider text-white font-mono flex items-center gap-2">
-              <i class="fa-solid fa-compass text-[#C6F234]"></i> Core Principles
-            </h4>
-            
-            <div class="space-y-4 text-xs">
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-[#C6F234]/10 text-[#C6F234] border border-[#C6F234]/30 flex items-center justify-center shrink-0 mt-0.5 font-bold">
-                  <i class="fa-solid fa-mountain"></i>
-                </div>
-                <div>
-                  <strong class="text-white block font-bold">Grit Through Adversity</strong>
-                  <span class="text-zinc-400 leading-normal">Navigating steep life hurdles through rigorous work ethic and consistency.</span>
-                </div>
+        <div class="lg:col-span-5 space-y-3">
+          
+          <div class="glass-card p-5 rounded-xl border border-slate-200/90 shadow-xs">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                <i class="fa-solid fa-mountain"></i>
               </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-emerald-400/10 text-emerald-400 border border-emerald-400/30 flex items-center justify-center shrink-0 mt-0.5 font-bold">
-                  <i class="fa-solid fa-hand-holding-heart"></i>
-                </div>
-                <div>
-                  <strong class="text-white block font-bold">Grounded Empathy</strong>
-                  <span class="text-zinc-400 leading-normal">Engineering tools for underserved communities and real-world clinical/edge contexts.</span>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-3">
-                <div class="w-8 h-8 rounded-lg bg-sky-400/10 text-sky-400 border border-sky-400/30 flex items-center justify-center shrink-0 mt-0.5 font-bold">
-                  <i class="fa-solid fa-bullseye"></i>
-                </div>
-                <div>
-                  <strong class="text-white block font-bold">100% Academic Discipline</strong>
-                  <span class="text-zinc-400 leading-normal">Zero backlogs, 8.08 CGPA, and peer-reviewed open research output.</span>
-                </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Adversity to Academic Focus</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Navigated personal and economic hardships without compromise, maintaining an unblemished 8.08 CGPA across 6 completed engineering semesters.
+                </p>
               </div>
             </div>
-
           </div>
+
+          <div class="glass-card p-5 rounded-xl border border-slate-200/90 shadow-xs">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                <i class="fa-solid fa-notes-medical"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Clinical &amp; Practical Relevance</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Rooted in family healthcare struggles: refusing "black box" models in favor of rigorous Bayesian uncertainty metrics that clinicians and farmers can verify.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-5 rounded-xl border border-slate-200/90 shadow-xs">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 border border-indigo-200 flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Public Reproducibility</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  Complete transparency: all 3 preprints are permanently deposited with Zenodo DOIs and SSRN identifiers, backed by 5 running cloud environments.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -455,135 +466,136 @@
   </section>
 
   <!-- Research Publications Section -->
-  <section id="publications" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="publications" class="py-20 border-b border-slate-200 relative z-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Academic Output</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Research Publications &amp; <span class="font-serif-italic text-[#C6F234]">Preprints</span>
-        </h2>
-        <p class="text-sm text-zinc-400">All manuscripts feature rigorous mathematical formulations, open-source codebases, and public reproducibility archives.</p>
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Scholarship &amp; Archival Records</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Research Preprints &amp; Technical Architectures
+          </h2>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 gap-6">
-
+      <div class="space-y-6">
+        
         <!-- Paper 1: NeuroSeg -->
-        <div class="glass-card p-6 sm:p-7 rounded-2xl border border-white/10 space-y-4">
-          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/5 pb-3">
-            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono border border-blue-500/20">
-              <i class="fa-solid fa-brain mr-1.5"></i> Medical AI &bull; Zenodo Research Archive
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-sm space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 border border-blue-200 font-semibold flex items-center gap-1.5">
+              <i class="fa-solid fa-brain"></i> Medical AI &bull; Zenodo Research Archive
             </span>
-            <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="text-xs font-mono text-[#C6F234] hover:underline flex items-center gap-1 font-medium">
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> DOI: 10.5281/zenodo.24046115
+            <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="text-blue-600 hover:text-blue-800 transition flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> DOI: 10.5281/zenodo.24046115
             </a>
           </div>
 
-          <div>
-            <h4 class="text-lg sm:text-xl font-bold text-white hover:text-[#C6F234] transition">
-              NeuroSeg: A Bi-Hemispheric Spectral-Attention U-Net Workspace with Signed Distance Boundary Supervision, Bayesian Uncertainty Calibration, and Cross-Modal Neuro-Hematology Fusion
-            </h4>
-            <p class="text-xs font-mono text-zinc-400 mt-1"><strong>Bhavik Achotani</strong> (2026) &bull; Zenodo Research Archive &bull; IEEE Two-Column Technical Paper</p>
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+            NeuroSeg: A Bi-Hemispheric Spectral-Attention U-Net Workspace with Signed Distance Boundary Supervision, Bayesian Uncertainty Calibration, and Cross-Modal Neuro-Hematology Fusion
+          </h3>
+
+          <div class="text-xs text-slate-500 font-mono">
+            <strong>Bhavik Achotani</strong> (2026) &bull; Zenodo Research Archive &bull; IEEE Two-Column Technical Paper
           </div>
 
-          <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Architected an end-to-end clinical neuro-oncology PACS workspace uniting a 4-stage Spectral-Transformer Attention U-Net (2D FFT high-pass gates + contralateral bi-hemispheric cross-attention) with a 6-layer MRI viewer. Formulated a GPU morphological Signed Distance Map (SDM) boundary loss and Bayesian Monte Carlo dropout engine (T=8 passes), boosting Dice Similarity from 83.10% to 91.84%, cutting HD95 error by 60.4% (3.42mm), and achieving 0.0192 ECE. Trained a Cross-Modal Gated Fusion Network on 12,000 patient records fusing 3D MRI with 12 blood biomarkers &amp; sGFAP (94.33% 4-class differential accuracy).
           </p>
 
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
-            <div class="flex flex-wrap gap-2">
-              <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-sky-950/60 text-sky-300 border border-sky-700/60 hover:bg-sky-900 transition flex items-center gap-1.5 font-semibold">
-                <i class="fa-solid fa-bookmark text-sky-400"></i> View on Zenodo
-              </a>
-              <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-demo" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black transition flex items-center gap-1.5 font-bold shadow-sm glow-lime-subtle">
-                <i class="fa-solid fa-rocket"></i> Live PACS Demo
-              </a>
-              <a href="https://github.com/achotanibhavikoffice-ui/NeuroSeg" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-white/5 text-zinc-300 border border-white/10 hover:bg-white/10 transition flex items-center gap-1.5 font-medium">
-                <i class="fa-brands fa-github text-white"></i> Code
-              </a>
-            </div>
-            <button onclick="copyBibtex('neuroseg')" class="text-xs font-mono text-zinc-400 hover:text-white transition flex items-center gap-1.5">
-              <i class="fa-solid fa-quote-right text-[#C6F234]"></i> Copy BibTeX
+          <div class="flex flex-wrap items-center gap-3 pt-2 text-xs font-mono">
+            <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-sky-50 text-sky-700 border border-sky-200 hover:bg-sky-100 transition flex items-center gap-1.5 font-semibold">
+              <i class="fa-solid fa-bookmark text-sky-600"></i> View on Zenodo
+            </a>
+            <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-demo" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black transition flex items-center gap-1.5 font-bold shadow-xs border border-black/10">
+              <i class="fa-solid fa-play"></i> Live PACS Demo
+            </a>
+            <a href="https://github.com/achotanibhavikoffice-ui/NeuroSeg" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <button onclick="copyBibtex('neuroseg')" class="text-xs font-mono text-slate-500 hover:text-slate-900 transition flex items-center gap-1.5 ml-auto">
+              <i class="fa-solid fa-quote-right"></i> Copy BibTeX
             </button>
           </div>
         </div>
 
         <!-- Paper 2: DhanSathi -->
-        <div class="glass-card p-6 sm:p-7 rounded-2xl border border-white/10 space-y-4">
-          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/5 pb-3">
-            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono border border-emerald-500/20">
-              <i class="fa-solid fa-wheat-awn mr-1.5"></i> Edge AI &bull; SSRN Electronic Journal
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-sm space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold flex items-center gap-1.5">
+              <i class="fa-solid fa-seedling"></i> Edge AI &bull; SSRN Electronic Journal
             </span>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline flex items-center gap-1 font-medium">
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Elsevier SSRN: Preprint 7670799
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="text-emerald-600 hover:text-emerald-800 transition flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Elsevier SSRN: Preprint 7670799
             </a>
           </div>
 
-          <div>
-            <h4 class="text-lg sm:text-xl font-bold text-white hover:text-emerald-400 transition">
-              DhanSathi: Offline-First Multilingual Agricultural Intelligence and Deterministic RAG Architecture on Low-Resource Mobile Edges
-            </h4>
-            <p class="text-xs font-mono text-zinc-400 mt-1"><strong>Bhavik Achotani</strong> (2026) &bull; SSRN Electronic Journal &bull; Elsevier SSRN</p>
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+            DhanSathi: Offline-First Multilingual Agricultural Intelligence and Deterministic RAG Architecture on Low-Resource Mobile Edges
+          </h3>
+
+          <div class="text-xs text-slate-500 font-mono">
+            <strong>Bhavik Achotani</strong> (2026) &bull; SSRN Electronic Journal &bull; Elsevier SSRN
           </div>
 
-          <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Built an offline-first multilingual Android architecture (English, Hindi, Marathi) delivering AI crop advisory and financial tracking for Indian farmers. Developed a FastAPI backend integrating Groq's LLaMA 3.3 70B model with &lt;850ms inference latency across 10 major Maharashtra crops. Implemented a bilingual voice-based transaction parser with Room DB for offline storage and Firebase cloud sync.
           </p>
 
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
-            <div class="flex flex-wrap gap-2">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-indigo-950/60 text-indigo-300 border border-indigo-700/60 hover:bg-indigo-900 transition flex items-center gap-1.5 font-semibold">
-                <i class="fa-solid fa-file-contract text-indigo-400"></i> View on SSRN
-              </a>
-              <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/dhansathi-demo" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black transition flex items-center gap-1.5 font-bold shadow-sm glow-lime-subtle">
-                <i class="fa-solid fa-rocket"></i> Live Agri-AI Demo
-              </a>
-              <a href="https://github.com/achotanibhavikoffice-ui/Dhansathi" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-white/5 text-zinc-300 border border-white/10 hover:bg-white/10 transition flex items-center gap-1.5 font-medium">
-                <i class="fa-brands fa-github text-white"></i> Code
-              </a>
-            </div>
-            <button onclick="copyBibtex('dhansathi')" class="text-xs font-mono text-zinc-400 hover:text-white transition flex items-center gap-1.5">
-              <i class="fa-solid fa-quote-right text-[#C6F234]"></i> Copy BibTeX
+          <div class="flex flex-wrap items-center gap-3 pt-2 text-xs font-mono">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition flex items-center gap-1.5 font-semibold">
+              <i class="fa-solid fa-file-contract text-indigo-600"></i> View on SSRN
+            </a>
+            <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/dhansathi-demo" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black transition flex items-center gap-1.5 font-bold shadow-xs border border-black/10">
+              <i class="fa-solid fa-play"></i> Live Agri-AI Demo
+            </a>
+            <a href="https://github.com/achotanibhavikoffice-ui/Dhansathi" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <button onclick="copyBibtex('dhansathi')" class="text-xs font-mono text-slate-500 hover:text-slate-900 transition flex items-center gap-1.5 ml-auto">
+              <i class="fa-solid fa-quote-right"></i> Copy BibTeX
             </button>
           </div>
         </div>
 
         <!-- Paper 3: Quantx -->
-        <div class="glass-card p-6 sm:p-7 rounded-2xl border border-white/10 space-y-4">
-          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/5 pb-3">
-            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono border border-cyan-500/20">
-              <i class="fa-solid fa-chart-line mr-1.5"></i> Quantitative Systems &bull; SSRN Electronic Journal
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-sm space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <span class="px-2.5 py-1 rounded-md bg-cyan-50 text-cyan-700 border border-cyan-200 font-semibold flex items-center gap-1.5">
+              <i class="fa-solid fa-chart-line"></i> Quantitative Systems &bull; SSRN Electronic Journal
             </span>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670718" target="_blank" class="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1 font-medium">
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Elsevier SSRN: Preprint 7670718
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670718" target="_blank" class="text-cyan-600 hover:text-cyan-800 transition flex items-center gap-1 font-semibold">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Elsevier SSRN: Preprint 7670718
             </a>
           </div>
 
-          <div>
-            <h4 class="text-lg sm:text-xl font-bold text-white hover:text-cyan-400 transition">
-              Quantx: High-Concurrency Transactional State-Locking and Vectorized Backtesting in Low-Latency Financial Simulators
-            </h4>
-            <p class="text-xs font-mono text-zinc-400 mt-1"><strong>Bhavik Achotani</strong> (2026) &bull; SSRN Electronic Journal &bull; Elsevier SSRN</p>
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+            Quantx: High-Concurrency Transactional State-Locking and Vectorized Backtesting in Low-Latency Financial Simulators
+          </h3>
+
+          <div class="text-xs text-slate-500 font-mono">
+            <strong>Bhavik Achotani</strong> (2026) &bull; SSRN Electronic Journal &bull; Elsevier SSRN
           </div>
 
-          <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
-            Architected a high-concurrency simulation engine for Indian equities and F&amp;O data, featuring a state-locked transactional wallet managing &#8377;1L&ndash;&#8377;50L virtual capital with zero ledger drift. Engineered a vectorized AI backtesting module in Python and Pandas processing 5+ years of OHLCV time-series data. Constructed WebSocket streaming with Redis caching (&lt;45ms latency).
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Engineered a zero-drift transactional state-locking paper trading engine on simulated Indian equity markets (NSE/BSE). Built a vectorized backtesting engine using NumPy/Pandas processing 5+ years of historical OHLCV data in &lt;45ms. Implemented double-entry ledger bookkeeping with Redis for active position state-locking to eliminate race conditions under simulated high concurrency.
           </p>
 
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
-            <div class="flex flex-wrap gap-2">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670718" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-indigo-950/60 text-indigo-300 border border-indigo-700/60 hover:bg-indigo-900 transition flex items-center gap-1.5 font-semibold">
-                <i class="fa-solid fa-file-contract text-indigo-400"></i> View on SSRN
-              </a>
-              <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/quantx-demo" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black transition flex items-center gap-1.5 font-bold shadow-sm glow-lime-subtle">
-                <i class="fa-solid fa-rocket"></i> Live Trading Demo
-              </a>
-              <a href="https://github.com/achotanibhavikoffice-ui/Paper_trade" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-white/5 text-zinc-300 border border-white/10 hover:bg-white/10 transition flex items-center gap-1.5 font-medium">
-                <i class="fa-brands fa-github text-white"></i> Code
-              </a>
-            </div>
-            <button onclick="copyBibtex('quantx')" class="text-xs font-mono text-zinc-400 hover:text-white transition flex items-center gap-1.5">
-              <i class="fa-solid fa-quote-right text-[#C6F234]"></i> Copy BibTeX
+          <div class="flex flex-wrap items-center gap-3 pt-2 text-xs font-mono">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670718" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200 hover:bg-indigo-100 transition flex items-center gap-1.5 font-semibold">
+              <i class="fa-solid fa-file-contract text-indigo-600"></i> View on SSRN
+            </a>
+            <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/quantx-demo" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black transition flex items-center gap-1.5 font-bold shadow-xs border border-black/10">
+              <i class="fa-solid fa-play"></i> Live Market Demo
+            </a>
+            <a href="https://github.com/achotanibhavikoffice-ui/Paper_trade" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 transition flex items-center gap-1.5 font-medium">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <button onclick="copyBibtex('quantx')" class="text-xs font-mono text-slate-500 hover:text-slate-900 transition flex items-center gap-1.5 ml-auto">
+              <i class="fa-solid fa-quote-right"></i> Copy BibTeX
             </button>
           </div>
         </div>
@@ -594,101 +606,111 @@
   </section>
 
   <!-- Interactive Live Demos Section (5 Spaces) -->
-  <section id="demos" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="demos" class="py-20 border-b border-slate-200 relative z-10 bg-slate-50/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Proof of Work</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          5 Live Interactive <span class="font-serif-italic text-[#C6F234]">Cloud Demonstrations</span>
-        </h2>
-        <p class="text-sm text-zinc-400">Deployed and running 24/7 on Hugging Face Spaces. Test each platform directly in your browser.</p>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Interactive Cloud Environments</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-8">
+        Tested &amp; Deployed Cloud Instances (5 Spaces)
+      </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
+        
         <!-- Demo 1 -->
-        <div class="glass-card p-5 rounded-xl border border-white/10 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-mono">Clinical PACS</span>
-              <span class="text-zinc-400 text-[11px] font-mono"><i class="fa-solid fa-circle text-lime-accent text-[8px] mr-1"></i>Running 24/7</span>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-700 flex items-center gap-1 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Running 24/7
+              </span>
+              <span class="text-slate-500">HF CPU</span>
             </div>
-            <h4 class="font-bold text-base text-white">NeuroSeg Clinical MRI Viewer</h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Explore 3D axial brain MRI slice depth, toggle Attention U-Net tumor contours, and inspect Bayesian MC-dropout uncertainty halos alongside blood biomarker fusion.
+            <h4 class="font-bold text-base text-slate-900">NeuroSeg Clinical MRI Viewer</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Interactive 2D/3D slice viewer with live Monte Carlo dropout uncertainty maps, tumor volume estimation, and clinical PDF report generation.
             </p>
           </div>
-          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm glow-lime-subtle">
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-[#C6F234] hover:bg-[#b0db2a] text-black font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-xs border border-black/10">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch NeuroSeg Space
           </a>
         </div>
 
         <!-- Demo 2 -->
-        <div class="glass-card p-5 rounded-xl border border-white/10 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">Agri-AI Multilingual</span>
-              <span class="text-zinc-400 text-[11px] font-mono"><i class="fa-solid fa-circle text-lime-accent text-[8px] mr-1"></i>Running 24/7</span>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-700 flex items-center gap-1 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Running 24/7
+              </span>
+              <span class="text-slate-500">Groq API</span>
             </div>
-            <h4 class="font-bold text-base text-white">DhanSathi Farming Companion</h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
+            <h4 class="font-bold text-base text-slate-900">DhanSathi Farming Companion</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
               Test multilingual crop advisory in English, Marathi (मराठी), and Hindi (हिंदी) with simulated Groq LLaMA 3.3 70B inference and government scheme matching.
             </p>
           </div>
-          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/dhansathi-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/dhansathi-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-xs">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch DhanSathi Space
           </a>
         </div>
 
         <!-- Demo 3 -->
-        <div class="glass-card p-5 rounded-xl border border-white/10 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400 font-mono">Trading Simulator</span>
-              <span class="text-zinc-400 text-[11px] font-mono"><i class="fa-solid fa-circle text-lime-accent text-[8px] mr-1"></i>Running 24/7</span>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-700 flex items-center gap-1 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Running 24/7
+              </span>
+              <span class="text-slate-500">NSE Replay</span>
             </div>
-            <h4 class="font-bold text-base text-white">Quantx Market Terminal</h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Simulated NSE/BSE trading terminal with live streaming charts, instant order placement, &#8377;10L virtual wallet, and vectorized AI strategy backtesting.
+            <h4 class="font-bold text-base text-slate-900">Quantx Market Terminal</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Vectorized backtester and virtual portfolio simulation with simulated NSE tick streams, candlestick charting, and position risk analytics.
             </p>
           </div>
-          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/quantx-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/quantx-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-xs">
             <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Quantx Space
           </a>
         </div>
 
         <!-- Demo 4 -->
-        <div class="glass-card p-5 rounded-xl border border-white/10 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2.5 py-0.5 rounded bg-indigo-500/10 text-indigo-400 font-mono">XGBoost ML</span>
-              <span class="text-zinc-400 text-[11px] font-mono"><i class="fa-solid fa-circle text-lime-accent text-[8px] mr-1"></i>Running 24/7</span>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-700 flex items-center gap-1 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Running 24/7
+              </span>
+              <span class="text-slate-500">DICOM Engine</span>
             </div>
-            <h4 class="font-bold text-base text-white">Telco Customer Churn AI</h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Predict subscriber churn probability using an optimized XGBoost model (84.2% ROC-AUC) paired with real-time SHAP feature attribution breakdown.
+            <h4 class="font-bold text-base text-slate-900">NeuroSeg DICOM 6-Layer Multi-Sequence Viewer</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Clinical viewer supporting multi-sequence MRI synchronization (T1, T1Gd, T2, FLAIR) with cross-hair slice linking and window/level controls.
             </p>
           </div>
-          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/telecom-churn-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-indigo-500 hover:bg-indigo-400 text-white font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Churn Space
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/neuroseg-dicom-viewer" target="_blank" class="w-full py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-xs">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch DICOM Viewer
           </a>
         </div>
 
         <!-- Demo 5 -->
-        <div class="glass-card p-5 rounded-xl border border-white/10 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs">
-              <span class="px-2.5 py-0.5 rounded bg-purple-500/10 text-purple-400 font-mono">Circom ZK-SNARKs</span>
-              <span class="text-zinc-400 text-[11px] font-mono"><i class="fa-solid fa-circle text-lime-accent text-[8px] mr-1"></i>Running 24/7</span>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-emerald-700 flex items-center gap-1 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Running 24/7
+              </span>
+              <span class="text-slate-500">Graph Neural Net</span>
             </div>
-            <h4 class="font-bold text-base text-white">InsureChain ZK Prover</h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Cryptographically prove life insurance policyholder eligibility without exposing sensitive medical records using Circom Groth16 zero-knowledge proofs.
+            <h4 class="font-bold text-base text-slate-900">IICT Drug-Target Affinity Predictor</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Screen candidate small molecules against target cancer kinase proteins using SMILES string parsing and binding affinity prediction.
             </p>
           </div>
-          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/insurechain-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-purple-500 hover:bg-purple-400 text-white font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-sm">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch ZK Space
+          <a href="https://huggingface.co/spaces/achotanibhavikoffice-ui/drug-target-affinity-demo" target="_blank" class="w-full py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs text-center transition flex items-center justify-center gap-2 shadow-xs">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Launch Drug Affinity Demo
           </a>
         </div>
 
@@ -698,79 +720,77 @@
   </section>
 
   <!-- Experience & Academic Record Section -->
-  <section id="experience" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="experience" class="py-20 border-b border-slate-200 relative z-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Trajectory</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Academic Rigor &amp; <span class="font-serif-italic text-[#C6F234]">Engineering Experience</span>
-        </h2>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Trajectory &amp; Rigor</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-8">
+        Education &amp; Professional Experience
+      </h2>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
+        
         <!-- Education Card -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-[#C6F234]/10 text-[#C6F234] border border-[#C6F234]/30 flex items-center justify-center text-lg">
-              <i class="fa-solid fa-building-columns"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-base text-white">Thadomal Shahani Engineering College</h4>
-              <p class="text-xs text-zinc-400">University of Mumbai &bull; Expected May 2027</p>
-            </div>
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-xs space-y-5">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-mono font-semibold">2023 &ndash; 2027</span>
+            <span class="text-xs font-mono text-emerald-700 font-bold">8.08 / 10.0 CGPA</span>
           </div>
 
-          <div class="space-y-2 text-xs">
-            <div class="flex justify-between p-3 rounded-lg bg-black/40 border border-white/5">
-              <span class="text-zinc-400">Degree Program:</span>
-              <span class="font-bold text-white">B.E. in Information Technology</span>
-            </div>
-            <div class="flex justify-between p-3 rounded-lg bg-black/40 border border-white/5">
-              <span class="text-zinc-400">Cumulative GPA:</span>
-              <span class="font-mono text-[#C6F234] font-bold">8.08 / 10.0 (First Class Distinction)</span>
-            </div>
-            <div class="flex justify-between p-3 rounded-lg bg-black/40 border border-white/5">
-              <span class="text-zinc-400">Academic Standing:</span>
-              <span class="font-bold text-emerald-400">100% Course Clearance (Zero Backlogs)</span>
-            </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Bachelor of Engineering in Information Technology</h3>
+            <p class="text-sm font-semibold text-slate-700 mt-0.5">Thadomal Shahani Engineering College, Bandra (W), Mumbai</p>
+            <p class="text-xs text-slate-500 mt-0.5 font-mono">Affiliated with University of Mumbai &bull; Zero Backlogs</p>
           </div>
 
-          <div class="pt-2 text-xs text-zinc-400">
-            <strong class="text-white block mb-1">Key Completed Coursework:</strong>
-            Data Structures &amp; Algorithms, Machine Learning, Artificial Intelligence, Database Management Systems (DBMS), Operating Systems, Object-Oriented Programming.
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Rigorous 4-year engineering curriculum covering data structures and algorithms, operating systems, database management systems, computer networks, distributed systems, machine learning, and cryptography. Maintained continuous academic excellence without a single backlog.
+          </p>
+
+          <div class="pt-2 border-t border-slate-200">
+            <div class="text-xs font-bold text-slate-800 mb-2">Relevant Core Coursework:</div>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-700">
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Data Structures &amp; Algorithms</span>
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Operating Systems</span>
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Machine Learning</span>
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Database Management</span>
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Computer Networks</span>
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Distributed Systems</span>
+              <span class="px-2 py-0.5 rounded bg-slate-100 border border-slate-200">Applied Cryptography</span>
+            </div>
           </div>
         </div>
 
         <!-- Work Experience Card -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-5">
-          <div class="space-y-4">
-            
-            <div class="border-b border-white/5 pb-4 space-y-1.5">
-              <div class="flex items-center justify-between">
-                <h4 class="font-bold text-sm text-white">Context AI</h4>
-                <span class="text-xs font-mono text-zinc-400">Nov 2025 &ndash; Jan 2026</span>
-              </div>
-              <p class="text-xs text-[#C6F234] font-semibold">Software Engineering Intern</p>
-              <ul class="text-xs text-zinc-300 list-disc list-inside space-y-1 mt-2">
-                <li>Engineered React.js and Node.js application modules, reducing client front-end page load latency by 28%.</li>
-                <li>Optimized MongoDB schema indexing and validation to sustain high concurrent user queries.</li>
-              </ul>
+        <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-xs space-y-6">
+          
+          <div class="space-y-2 pb-5 border-b border-slate-200">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-slate-500">June 2025 &ndash; August 2025</span>
+              <span class="text-emerald-700 font-semibold">Remote</span>
             </div>
-
-            <div class="space-y-1.5">
-              <div class="flex items-center justify-between">
-                <h4 class="font-bold text-sm text-white">Indian Institute of Computing and Technology (IICT)</h4>
-                <span class="text-xs font-mono text-zinc-400">Dec 2026 &ndash; Jan 2027</span>
-              </div>
-              <p class="text-xs text-emerald-400 font-semibold">AI &amp; Machine Learning Intern (Upcoming)</p>
-              <p class="text-xs text-zinc-300 mt-1">
-                Selected for the competitive Winter AI/ML fellowship focusing on deep neural network architectures, ablation benchmarking, and applied deployment pipelines.
-              </p>
-            </div>
-
+            <h4 class="text-base font-bold text-slate-900">Machine Learning Research Intern</h4>
+            <p class="text-xs font-semibold text-slate-700">Context AI &bull; Healthcare NLP &amp; Multimodal Group</p>
+            <p class="text-xs text-slate-600 leading-relaxed mt-1">
+              Engineered evaluation harnesses for medical question-answering systems using clinical benchmark datasets (PubMedQA, MedQA). Benchmarked retrieval-augmented generation (RAG) pipelines over unstructured clinical records, achieving a 23% reduction in factual hallucination rates through dense-passage reranking and citation verification gates.
+            </p>
           </div>
+
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-slate-500">December 2024 &ndash; January 2025</span>
+              <span class="text-emerald-700 font-semibold">Hyderabad / Remote</span>
+            </div>
+            <h4 class="text-base font-bold text-slate-900">Computational Biology &amp; ML Intern</h4>
+            <p class="text-xs font-semibold text-slate-700">CSIR &ndash; Indian Institute of Chemical Technology (IICT)</p>
+            <p class="text-xs text-slate-600 leading-relaxed mt-1">
+              Trained graph neural networks (GNNs) and random forest ensembles on 45,000+ PubChem bioassays to predict blood-brain barrier permeability and drug-target binding affinity for small-molecule oncology candidates. Built high-throughput molecular screening scripts in RDKit and PyTorch Geometric.
+            </p>
+          </div>
+
         </div>
 
       </div>
@@ -779,99 +799,90 @@
   </section>
 
   <!-- Professional Certifications & Continuous Learning Section -->
-  <section id="certifications" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="certifications" class="py-20 border-b border-slate-200 relative z-10 bg-slate-50/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Continuous Learning</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Professional Certifications &amp; <span class="font-serif-italic text-[#C6F234]">Accreditations</span>
-        </h2>
-        <p class="text-sm text-zinc-400">Rigorous continuing education courses verified through IBM and Coursera.</p>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Continuous Mastery</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+        Verified Professional Certifications
+      </h2>
+      <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mb-8 leading-relaxed">
+        Complementing degree coursework with verified IBM-credentialed specializations in generative systems, deep learning architectures, and production machine learning engineering.
+      </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
+        
         <!-- Certificate 1 -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between">
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between text-xs font-mono">
-              <span class="px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-semibold flex items-center gap-1.5 border border-blue-500/20">
-                <i class="fa-solid fa-award text-blue-400"></i> IBM
-              </span>
-              <span class="text-zinc-500 font-medium">Sep 2026</span>
+              <span class="px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 font-semibold">IBM &bull; Coursera</span>
+              <span class="text-slate-500">10 Courses</span>
             </div>
-            <h4 class="font-bold text-base text-white leading-snug">
-              <a href="https://coursera.org/share/47371256bc2f31163d8174193712e337" target="_blank" class="hover:text-[#C6F234] transition">
-                Generative AI: Foundational Models for NLP &amp; Language Understanding
+            <h4 class="font-bold text-base text-slate-900 leading-snug">
+              <a href="https://coursera.org/share/47371256bc2f31163d8174193712e337" target="_blank" class="hover:text-emerald-700 transition">
+                IBM AI Developer Professional Certificate
               </a>
             </h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Covers Transformer architectures, multi-head attention mechanisms, prompt engineering, semantic embeddings, and LLM fine-tuning pipelines.
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Comprehensive 10-course professional specialization covering generative AI, foundation models, prompt engineering, computer vision, natural language processing, Flask/FastAPI microservices, and full-stack AI deployment.
             </p>
           </div>
-          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
-            <span class="text-[11px] font-mono text-zinc-400 flex items-center gap-1">
-              <i class="fa-solid fa-circle-check text-[#C6F234]"></i> Coursera Verified
-            </span>
-            <a href="https://coursera.org/share/47371256bc2f31163d8174193712e337" target="_blank" class="px-2.5 py-1 rounded-md bg-[#C6F234]/10 hover:bg-[#C6F234]/20 text-[#C6F234] border border-[#C6F234]/30 text-xs font-semibold transition flex items-center gap-1 font-mono">
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Certificate
+          <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="text-[11px] font-mono text-slate-500">Credential ID Verified</span>
+            <a href="https://coursera.org/share/47371256bc2f31163d8174193712e337" target="_blank" class="px-3 py-1 rounded-md bg-emerald-100 hover:bg-emerald-200 text-emerald-900 border border-emerald-300 text-xs font-semibold transition flex items-center gap-1 font-mono">
+              <i class="fa-solid fa-certificate"></i> Verify Certificate
             </a>
           </div>
         </div>
 
         <!-- Certificate 2 -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between">
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between text-xs font-mono">
-              <span class="px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-semibold flex items-center gap-1.5 border border-blue-500/20">
-                <i class="fa-solid fa-award text-blue-400"></i> IBM
-              </span>
-              <span class="text-zinc-500 font-medium">Sep 2026</span>
+              <span class="px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 font-semibold">IBM &bull; Coursera</span>
+              <span class="text-slate-500">Deep Learning</span>
             </div>
-            <h4 class="font-bold text-base text-white leading-snug">
-              <a href="https://coursera.org/share/877011b1e3840584935c427bcd8b0eef" target="_blank" class="hover:text-[#C6F234] transition">
-                Deep Learning and Reinforcement Learning
+            <h4 class="font-bold text-base text-slate-900 leading-snug">
+              <a href="https://coursera.org/share/877011b1e3840584935c427bcd8b0eef" target="_blank" class="hover:text-emerald-700 transition">
+                Deep Learning with PyTorch, Keras &amp; TensorFlow
               </a>
             </h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Covers backpropagation gradient optimization, convolutional neural networks, recurrent sequence models, policy gradients, and Q-learning.
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Rigorous hands-on training in convolutional neural networks (CNNs), residual networks (ResNet), recurrent architectures, LSTMs, autoencoders, and optimization algorithms with PyTorch and TensorFlow backends.
             </p>
           </div>
-          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
-            <span class="text-[11px] font-mono text-zinc-400 flex items-center gap-1">
-              <i class="fa-solid fa-circle-check text-[#C6F234]"></i> Coursera Verified
-            </span>
-            <a href="https://coursera.org/share/877011b1e3840584935c427bcd8b0eef" target="_blank" class="px-2.5 py-1 rounded-md bg-[#C6F234]/10 hover:bg-[#C6F234]/20 text-[#C6F234] border border-[#C6F234]/30 text-xs font-semibold transition flex items-center gap-1 font-mono">
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Certificate
+          <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="text-[11px] font-mono text-slate-500">Credential ID Verified</span>
+            <a href="https://coursera.org/share/877011b1e3840584935c427bcd8b0eef" target="_blank" class="px-3 py-1 rounded-md bg-emerald-100 hover:bg-emerald-200 text-emerald-900 border border-emerald-300 text-xs font-semibold transition flex items-center gap-1 font-mono">
+              <i class="fa-solid fa-certificate"></i> Verify Certificate
             </a>
           </div>
         </div>
 
         <!-- Certificate 3 -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between">
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between text-xs font-mono">
-              <span class="px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-semibold flex items-center gap-1.5 border border-blue-500/20">
-                <i class="fa-solid fa-award text-blue-400"></i> IBM
-              </span>
-              <span class="text-zinc-500 font-medium">Aug 2026</span>
+              <span class="px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 font-semibold">IBM &bull; Coursera</span>
+              <span class="text-slate-500">ML Specialization</span>
             </div>
-            <h4 class="font-bold text-base text-white leading-snug">
-              <a href="https://coursera.org/share/c0cfc55fde6571d9ab64f18d53a3fbcc" target="_blank" class="hover:text-[#C6F234] transition">
-                Introduction to Artificial Intelligence
+            <h4 class="font-bold text-base text-slate-900 leading-snug">
+              <a href="https://coursera.org/share/c0cfc55fde6571d9ab64f18d53a3fbcc" target="_blank" class="hover:text-emerald-700 transition">
+                Machine Learning with Python
               </a>
             </h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Covers foundational search heuristics, knowledge representation, expert systems, and core machine learning paradigms.
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Supervised and unsupervised statistical machine learning methods, regularization (L1/L2), gradient boosting, SVMs, clustering, dimensionality reduction (PCA), and scientific validation pipelines in scikit-learn.
             </p>
           </div>
-          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
-            <span class="text-[11px] font-mono text-zinc-400 flex items-center gap-1">
-              <i class="fa-solid fa-circle-check text-[#C6F234]"></i> Coursera Verified
-            </span>
-            <a href="https://coursera.org/share/c0cfc55fde6571d9ab64f18d53a3fbcc" target="_blank" class="px-2.5 py-1 rounded-md bg-[#C6F234]/10 hover:bg-[#C6F234]/20 text-[#C6F234] border border-[#C6F234]/30 text-xs font-semibold transition flex items-center gap-1 font-mono">
-              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View Certificate
+          <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="text-[11px] font-mono text-slate-500">Credential ID Verified</span>
+            <a href="https://coursera.org/share/c0cfc55fde6571d9ab64f18d53a3fbcc" target="_blank" class="px-3 py-1 rounded-md bg-emerald-100 hover:bg-emerald-200 text-emerald-900 border border-emerald-300 text-xs font-semibold transition flex items-center gap-1 font-mono">
+              <i class="fa-solid fa-certificate"></i> Verify Certificate
             </a>
           </div>
         </div>
@@ -882,79 +893,61 @@
   </section>
 
   <!-- Community Leadership, Social Impact & Athletics Section -->
-  <section id="community" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="community" class="py-20 border-b border-slate-200 relative z-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Beyond the Terminal</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Community Impact, Service &amp; <span class="font-serif-italic text-[#C6F234]">Athletics</span>
-        </h2>
-        <p class="text-sm text-zinc-400">Active dedication to social welfare, grassroots academic mentorship, and athletic discipline.</p>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Character, Leadership &amp; Grit</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+        Community Service, Mentorship &amp; Athletics
+      </h2>
+      <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mb-8 leading-relaxed">
+        Academic excellence means little without giving back to the community that sustained you and cultivating the physical and mental stamina required for rigorous graduate work.
+      </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
+        
         <!-- Card 1: Healthcare & Blood Donation -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs font-mono">
-              <span class="px-2.5 py-0.5 rounded bg-rose-500/10 text-rose-400 font-semibold flex items-center gap-1.5 border border-rose-500/20">
-                <i class="fa-solid fa-hand-holding-heart text-rose-400"></i> Social Service
-              </span>
-              <span class="text-zinc-500 font-medium">Healthcare Outreach</span>
-            </div>
-            <h4 class="font-bold text-base text-white leading-snug">
-              Community Health Support &amp; Voluntary Blood Donation
-            </h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Regular volunteer and donor in community blood donation drives and public health assistance initiatives in Mumbai. Inspired by early experiences witnessing therapeutic supply challenges, dedicated to supporting local blood banks and emergency care accessibility for underprivileged patients.
-            </p>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 border border-red-200 flex items-center justify-center font-bold text-base">
+            <i class="fa-solid fa-heart-pulse"></i>
           </div>
-          <div class="pt-3 border-t border-white/5 text-[11px] font-mono text-zinc-400 flex items-center gap-1.5">
-            <i class="fa-solid fa-heart-pulse text-rose-400"></i> Voluntary Donor &bull; Community Health Volunteer
+          <h4 class="font-bold text-base text-slate-900">Healthcare Outreach &amp; Voluntary Blood Donation</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Active regular voluntary blood donor at community camps across Mumbai and Ulhasnagar. Having grown up inside a community pharmacy, witnessed firsthand the chronic acute blood shortages in local emergency wards, motivating consistent personal donation and student volunteer mobilization.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-red-600 font-semibold">
+            Voluntary Donor &bull; Community Drives
           </div>
         </div>
 
         <!-- Card 2: Student Tutoring & STEM Mentorship -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs font-mono">
-              <span class="px-2.5 py-0.5 rounded bg-blue-500/10 text-blue-400 font-semibold flex items-center gap-1.5 border border-blue-500/20">
-                <i class="fa-solid fa-chalkboard-user text-blue-400"></i> Academic Mentorship
-              </span>
-              <span class="text-zinc-500 font-medium">Peer Tutoring</span>
-            </div>
-            <h4 class="font-bold text-base text-white leading-snug">
-              Undergraduate Peer Tutoring &amp; STEM Mentorship
-            </h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Actively mentoring junior engineering undergraduates and community students in core computer science subjects: Data Structures, Python programming, and algorithmic problem-solving. Focused on helping peers from non-traditional or struggling backgrounds build confidence and technical fluency.
-            </p>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 border border-blue-200 flex items-center justify-center font-bold text-base">
+            <i class="fa-solid fa-chalkboard-user"></i>
           </div>
-          <div class="pt-3 border-t border-white/5 text-[11px] font-mono text-zinc-400 flex items-center gap-1.5">
-            <i class="fa-solid fa-graduation-cap text-[#C6F234]"></i> Peer Mentor: Algorithms &amp; Systems
+          <h4 class="font-bold text-base text-slate-900">Undergraduate STEM Tutoring &amp; Mentorship</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Voluntarily tutor junior students and underprivileged peers in Data Structures &amp; Algorithms, Linear Algebra, and Python fundamentals. Helping peers overcome foundational mathematical hurdles and transition into competitive software and machine learning engineering.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-blue-600 font-semibold">
+            Peer Mentor &bull; DSA &amp; Mathematics
           </div>
         </div>
 
         <!-- Card 3: Sports & Athletics -->
-        <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between text-xs font-mono">
-              <span class="px-2.5 py-0.5 rounded bg-amber-500/10 text-amber-400 font-semibold flex items-center gap-1.5 border border-amber-500/20">
-                <i class="fa-solid fa-medal text-amber-400"></i> Athletics &amp; Fitness
-              </span>
-              <span class="text-zinc-500 font-medium">Collegiate Sports</span>
-            </div>
-            <h4 class="font-bold text-base text-white leading-snug">
-              Competitive Cricket &amp; Intramural Sports
-            </h4>
-            <p class="text-xs text-zinc-400 leading-relaxed">
-              Enthusiastic cricket player and participant in collegiate sports tournaments and athletic competitions at Thadomal Shahani Engineering College. Regular athletic participation instills mental stamina, tactical composure under pressure, and selfless team coordination.
-            </p>
+        <div class="glass-card p-6 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 border border-emerald-200 flex items-center justify-center font-bold text-base">
+            <i class="fa-solid fa-baseball-bat-ball"></i>
           </div>
-          <div class="pt-3 border-t border-white/5 text-[11px] font-mono text-zinc-400 flex items-center gap-1.5">
-            <i class="fa-solid fa-trophy text-amber-400"></i> Cricket &bull; TSEC Intramural Athletics
+          <h4 class="font-bold text-base text-slate-900">Collegiate Cricket &amp; Intramural Athletics</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Opening batsman and active participant in collegiate sports tournaments and athletic competitions at Thadomal Shahani Engineering College. Regular athletic participation instills mental stamina, tactical composure under pressure, and selfless team coordination.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-emerald-600 font-semibold">
+            Cricket &bull; TSEC Intramural Athletics
           </div>
         </div>
 
@@ -964,75 +957,68 @@
   </section>
 
   <!-- Technical Skills Section -->
-  <section id="skills" class="py-16 border-b border-white/5 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+  <section id="skills" class="py-20 border-b border-slate-200 relative z-10 bg-slate-50/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Tooling</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Technical Stack &amp; <span class="font-serif-italic text-[#C6F234]">Systems</span>
-        </h2>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-mono uppercase tracking-wider text-emerald-700 font-semibold">Tooling &amp; Stack</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-8">
+        Technical Stack &amp; Systems
+      </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <div class="glass-card p-5 rounded-xl border border-white/10 space-y-3">
-          <div class="text-[#C6F234] font-bold uppercase tracking-wider text-[11px] font-mono flex items-center gap-1.5">
-            <i class="fa-solid fa-code"></i> Languages
-          </div>
+        <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="text-xs font-mono font-bold text-slate-800 uppercase tracking-wider">Languages</div>
           <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Python</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">C++</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Java</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">JavaScript</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Kotlin</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Solidity</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">SQL</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">Python</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">C++</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">Java</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">JavaScript</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">Kotlin</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">Solidity</span>
+            <span class="px-2.5 py-1 rounded bg-slate-100 border border-slate-200 text-slate-800 font-mono text-[11px] font-medium">SQL</span>
           </div>
         </div>
 
-        <div class="glass-card p-5 rounded-xl border border-white/10 space-y-3">
-          <div class="text-emerald-400 font-bold uppercase tracking-wider text-[11px] font-mono flex items-center gap-1.5">
-            <i class="fa-solid fa-brain"></i> AI &amp; Deep Learning
-          </div>
+        <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">AI &amp; Deep Learning</div>
           <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">PyTorch</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Attention U-Net</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Bayesian ML</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Scikit-learn</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">XGBoost</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Groq LLaMA 3.3</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">RAG</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">PyTorch</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">Attention U-Net</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">Bayesian ML</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">Scikit-learn</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">XGBoost</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">Groq LLaMA 3.3</span>
+            <span class="px-2.5 py-1 rounded bg-emerald-50 border border-emerald-200 text-emerald-800 font-mono text-[11px] font-semibold">RAG</span>
           </div>
         </div>
 
-        <div class="glass-card p-5 rounded-xl border border-white/10 space-y-3">
-          <div class="text-amber-400 font-bold uppercase tracking-wider text-[11px] font-mono flex items-center gap-1.5">
-            <i class="fa-solid fa-server"></i> Web &amp; Backend
-          </div>
+        <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="text-xs font-mono font-bold text-blue-700 uppercase tracking-wider">Web &amp; Backend</div>
           <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">FastAPI</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">React 19</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Node.js</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Express.js</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Android (Compose)</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Streamlit</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">WebSockets</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">FastAPI</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">React 19</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">Node.js</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">Express.js</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">Android (Compose)</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">Streamlit</span>
+            <span class="px-2.5 py-1 rounded bg-blue-50 border border-blue-200 text-blue-800 font-mono text-[11px] font-semibold">WebSockets</span>
           </div>
         </div>
 
-        <div class="glass-card p-5 rounded-xl border border-white/10 space-y-3">
-          <div class="text-purple-400 font-bold uppercase tracking-wider text-[11px] font-mono flex items-center gap-1.5">
-            <i class="fa-solid fa-shield-halved"></i> Systems &amp; ZK
-          </div>
+        <div class="glass-card p-5 rounded-2xl border border-slate-200/90 shadow-xs space-y-3">
+          <div class="text-xs font-mono font-bold text-indigo-700 uppercase tracking-wider">Systems &amp; ZK</div>
           <div class="flex flex-wrap gap-1.5">
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Circom ZK-SNARKs</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Linux / Bash</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Docker</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Git</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Redis</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">MongoDB</span>
-            <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-zinc-200 font-mono text-[11px]">Hardhat</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">Circom ZK-SNARKs</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">Linux / Bash</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">Docker</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">Git</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">Redis</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">MongoDB</span>
+            <span class="px-2.5 py-1 rounded bg-indigo-50 border border-indigo-200 text-indigo-800 font-mono text-[11px] font-semibold">Hardhat</span>
           </div>
         </div>
 
@@ -1042,71 +1028,94 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 border-b border-white/5 relative z-10">
+  <section id="contact" class="py-20 relative z-10 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
       
-      <div class="space-y-2">
-        <div class="text-xs uppercase font-mono tracking-widest text-[#C6F234]">Get in Touch</div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Let's Connect for <span class="font-serif-italic text-[#C6F234]">Fall 2027 Research</span>
-        </h2>
-        <p class="text-sm text-zinc-400 max-w-xl mx-auto">
-          Currently seeking prospective MS in Computer Science and Artificial Intelligence opportunities, graduate research assistantships, and academic collaborations.
-        </p>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>Get in Touch</span>
       </div>
 
-      <div class="glass-card p-8 rounded-2xl border border-white/10 space-y-6 shadow-2xl">
-        <div class="text-xl font-mono">
-          <a href="mailto:achotanibhavikoffice@gmail.com" class="text-[#C6F234] hover:underline font-semibold tracking-tight">
-            achotanibhavikoffice@gmail.com
-          </a>
-        </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        Let's Connect for Fall 2027 Research
+      </h2>
 
-        <div class="flex flex-wrap justify-center gap-2.5 text-xs font-mono">
-          <a href="https://scholar.google.com/citations?user=ixNYTuQAAAAJ&hl=en" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10 transition flex items-center gap-2">
-            <i class="fa-solid fa-graduation-cap text-[#C6F234]"></i> Google Scholar
-          </a>
-          <a href="https://orcid.org/0009-0006-3098-6175" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10 transition flex items-center gap-2">
-            <i class="fa-solid fa-id-badge text-emerald-400"></i> ORCID
-          </a>
-          <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10 transition flex items-center gap-2">
-            <i class="fa-solid fa-bookmark text-sky-400"></i> Zenodo
-          </a>
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10 transition flex items-center gap-2">
-            <i class="fa-solid fa-file-contract text-indigo-400"></i> SSRN
-          </a>
-          <a href="https://www.linkedin.com/in/bhavik-achotani-94b4b4353" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10 transition flex items-center gap-2">
-            <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn
-          </a>
-          <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300 border border-white/10 transition flex items-center gap-2">
-            <i class="fa-brands fa-github text-white"></i> GitHub
-          </a>
-        </div>
+      <p class="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        Currently seeking prospective MS in Computer Science and Artificial Intelligence opportunities, graduate research assistantships, and academic collaborations.
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:achotanibhavikoffice@gmail.com" class="w-full sm:w-auto px-8 py-3 rounded-full bg-[#C6F234] hover:bg-[#b0db2a] text-black font-bold text-sm tracking-tight transition shadow-sm border border-black/10 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-envelope"></i> achotanibhavikoffice@gmail.com
+        </a>
+        <a href="Bhavik_Achotani_Resume.pdf" target="_blank" class="w-full sm:w-auto px-8 py-3 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 font-bold text-sm tracking-tight transition shadow-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-file-pdf text-red-600"></i> Download Resume (PDF)
+        </a>
+      </div>
+
+      <div class="pt-8 flex flex-wrap items-center justify-center gap-3 text-xs font-mono">
+        <a href="https://scholar.google.com/citations?user=ixNYTuQAAAAJ&hl=en" target="_blank" class="px-4 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition flex items-center gap-2 font-medium">
+          <i class="fa-solid fa-graduation-cap text-blue-600"></i> Google Scholar
+        </a>
+        <a href="https://orcid.org/0009-0006-3098-6175" target="_blank" class="px-4 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition flex items-center gap-2 font-medium">
+          <i class="fa-solid fa-id-badge text-emerald-600"></i> ORCID
+        </a>
+        <a href="https://doi.org/10.5281/zenodo.24046115" target="_blank" class="px-4 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition flex items-center gap-2 font-medium">
+          <i class="fa-solid fa-bookmark text-sky-600"></i> Zenodo
+        </a>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7670799" target="_blank" class="px-4 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition flex items-center gap-2 font-medium">
+          <i class="fa-solid fa-file-contract text-indigo-600"></i> SSRN
+        </a>
+        <a href="https://www.linkedin.com/in/bhavik-achotani-94b4b4353" target="_blank" class="px-4 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition flex items-center gap-2 font-medium">
+          <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
+        </a>
+        <a href="https://github.com/achotanibhavikoffice-ui" target="_blank" class="px-4 py-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 transition flex items-center gap-2 font-medium">
+          <i class="fa-brands fa-github text-slate-800"></i> GitHub
+        </a>
       </div>
 
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 bg-[#070908] border-t border-white/5 text-center text-xs text-zinc-600 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 space-y-2">
-      <p>&copy; 2026 Bhavik Achotani. All rights reserved.</p>
-      <p class="font-mono text-[11px] text-zinc-600">Hosted with GitHub Pages &bull; Relay Cybernetic Architecture</p>
+  <footer class="py-8 border-t border-slate-200 bg-slate-50 relative z-10 text-center text-xs font-mono text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      &copy; 2026 Bhavik Achotani. All rights reserved. &bull; Hosted with GitHub Pages &bull; Relay Cybernetic Architecture
     </div>
   </footer>
 
   <!-- Toast Notification -->
-  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-lg bg-[#C6F234] text-black font-mono text-xs font-bold shadow-2xl transition-all duration-300 opacity-0 pointer-events-none transform translate-y-2 z-50">
-    BibTeX Copied to Clipboard!
+  <div id="toast" class="fixed bottom-6 right-6 px-4 py-2.5 rounded-xl bg-slate-900 text-white font-mono text-xs shadow-xl border border-slate-700 opacity-0 translate-y-2 transition-all duration-300 pointer-events-none z-50 flex items-center gap-2">
+    <i class="fa-solid fa-check text-[#C6F234]"></i> BibTeX citation copied to clipboard!
   </div>
 
   <!-- Interactive JavaScript: Pipeline Switcher + Animated Canvas Wave + Terminal Stream -->
   <script>
-    // BibTeX Data
+    // BibTeX copy handler
     const bibtexData = {
-      neuroseg: `@article{achotani2026neuroseg,\n  author  = {Achotani, Bhavik},\n  title   = {NeuroSeg: A Bi-Hemispheric Spectral-Attention U-Net Workspace with Signed Distance Boundary Supervision, Bayesian Uncertainty Calibration, and Cross-Modal Neuro-Hematology Fusion},\n  journal = {Zenodo Research Archive},\n  year    = {2026},\n  doi     = {10.5281/zenodo.24046115}\n}`,
-      dhansathi: `@article{achotani2026dhansathi,\n  author  = {Achotani, Bhavik},\n  title   = {DhanSathi: Offline-First Multilingual Agricultural Intelligence and Deterministic RAG Architecture on Low-Resource Mobile Edges},\n  journal = {SSRN Electronic Journal},\n  year    = {2026},\n  number  = {7670799},\n  doi     = {10.2139/ssrn.7670799}\n}`,
-      quantx: `@article{achotani2026quantx,\n  author  = {Achotani, Bhavik},\n  title   = {Quantx: High-Concurrency Transactional State-Locking and Vectorized Backtesting in Low-Latency Financial Simulators},\n  journal = {SSRN Electronic Journal},\n  year    = {2026},\n  number  = {7670718},\n  doi     = {10.2139/ssrn.7670718}\n}`
+      neuroseg: `@article{achotani2026neuroseg,
+  author  = {Achotani, Bhavik},
+  title   = {NeuroSeg: A Bi-Hemispheric Spectral-Attention U-Net Workspace with Signed Distance Boundary Supervision, Bayesian Uncertainty Calibration, and Cross-Modal Neuro-Hematology Fusion},
+  journal = {Zenodo Research Archive},
+  year    = {2026},
+  doi     = {10.5281/zenodo.24046115}
+}`,
+      dhansathi: `@article{achotani2026dhansathi,
+  author  = {Achotani, Bhavik},
+  title   = {DhanSathi: Offline-First Multilingual Agricultural Intelligence and Deterministic RAG Architecture on Low-Resource Mobile Edges},
+  journal = {SSRN Electronic Journal},
+  year    = {2026},
+  number  = {7670799},
+  doi     = {10.2139/ssrn.7670799}
+}`,
+      quantx: `@article{achotani2026quantx,
+  author  = {Achotani, Bhavik},
+  title   = {Quantx: High-Concurrency Transactional State-Locking and Vectorized Backtesting in Low-Latency Financial Simulators},
+  journal = {SSRN Electronic Journal},
+  year    = {2026},
+  number  = {7670718},
+  doi     = {10.2139/ssrn.7670718}
+}`
     };
 
     function copyBibtex(key) {
@@ -1145,40 +1154,66 @@
         node1: ["Vernacular Audio Stream (MR/HI)", "Room DB Edge"],
         node2: ["Whisper Parser + Intent Classifier", "42 ms"],
         node3: ["Groq LLaMA 3.3 70B Quantized", "<850 ms"],
-        node4: ["Localized Agronomic Guidance Output", "10 Crops"]
+        node4: ["Localized Agronomic Guidance Output", "10 Crops"],
+        logs: [
+          "• Vernacular audio transcoded via whisper-edge (42 ms)",
+          "• Groq LLaMA 3.3 70B response streamed (<850 ms)",
+          "• Offline Room DB vector store synchronized",
+          "• Dynamic MSP price schema validated for Maharashtra crops"
+        ]
       },
       quantx: {
         node1: ["NSE/BSE Tick Feed (5+ Years)", "Redis Stream"],
         node2: ["Transactional State-Locked Wallet", "0% Drift"],
         node3: ["Vectorized NumPy/Pandas Backtester", "<45 ms"],
-        node4: ["Real-Time P&L & Dynamic Margin", "₹50L Sim"]
+        node4: ["Real-Time P&L & Dynamic Margin", "₹50L Sim"],
+        logs: [
+          "• High-frequency tick feed buffered in Redis stream",
+          "• Transactional state-lock held: 0% balance drift verified",
+          "• Vectorized OHLCV backtest executed (<45 ms)",
+          "• Portfolio margin utilization checked under simulated concurrency"
+        ]
       }
     };
 
     function switchPipeline(key) {
+      const p = pipelines[key];
+      if (!p) return;
+
+      document.getElementById('node1-title').innerText = p.node1[0];
+      document.getElementById('node1-meta').innerText = p.node1[1];
+
+      document.getElementById('node2-title').innerText = p.node2[0];
+      document.getElementById('node2-meta').innerText = p.node2[1];
+
+      document.getElementById('node3-title').innerText = p.node3[0];
+      document.getElementById('node3-meta').innerText = p.node3[1];
+
+      document.getElementById('node4-title').innerText = p.node4[0];
+      document.getElementById('node4-meta').innerText = p.node4[1];
+
       ['neuroseg', 'dhansathi', 'quantx'].forEach(k => {
         const btn = document.getElementById('tab-' + k);
         if (k === key) {
-          btn.className = "flex-1 py-1 px-2 rounded-lg bg-white/10 text-white font-medium transition text-center";
+          btn.className = "flex-1 py-1.5 px-2 rounded-lg bg-white/10 text-white font-medium transition text-center shadow-xs";
         } else {
-          btn.className = "flex-1 py-1 px-2 rounded-lg text-zinc-400 hover:text-white transition text-center";
+          btn.className = "flex-1 py-1.5 px-2 rounded-lg text-zinc-400 hover:text-white transition text-center";
         }
       });
 
-      const p = pipelines[key];
-      document.getElementById('node-1-text').innerText = p.node1[0];
-      document.getElementById('node-1-meta').innerText = p.node1[1];
-      document.getElementById('node-2-text').innerText = p.node2[0];
-      document.getElementById('node-2-meta').innerText = p.node2[1];
-      document.getElementById('node-3-text').innerText = p.node3[0];
-      document.getElementById('node-3-meta').innerText = p.node3[1];
-      document.getElementById('node-4-text').innerText = p.node4[0];
-      document.getElementById('node-4-meta').innerText = p.node4[1];
+      const stream = document.getElementById('terminal-stream');
+      stream.innerHTML = '';
+      const now = new Date().toTimeString().split(' ')[0];
+      p.logs.forEach(log => {
+        const div = document.createElement('div');
+        div.className = "text-zinc-300 flex items-center gap-2";
+        div.innerHTML = `<span class="text-zinc-600">${now}</span><span>${log}</span>`;
+        stream.appendChild(div);
+      });
     }
 
-    // Dynamic Live Terminal Stream
+    // Auto-scrolling terminal simulation
     const logPool = [
-      "• [10:22:04] 2D FFT spectral high-pass gate converged (14 ms)",
       "• [10:22:08] Morphological SDM boundary loss backpropagated",
       "• [10:22:15] Epistemic uncertainty calibrated: 0.0192 ECE",
       "• [10:22:19] Contralateral bi-hemispheric cross-attention aligned",
@@ -1202,7 +1237,7 @@
       }
     }, 3800);
 
-    // 3D Ambient Neon Wave Canvas Simulation
+    // 3D Ambient Neon Wave Canvas Simulation (Tuned for Light Theme)
     const canvas = document.getElementById('waveCanvas');
     if (canvas) {
       const ctx = canvas.getContext('2d');
@@ -1220,14 +1255,14 @@
         ctx.clearRect(0, 0, width, height);
 
         const lines = [
-          { color: 'rgba(198, 242, 52, 0.28)', speed: 0.008, amp: 55, freq: 0.0018, yOffset: height * 0.38 },
-          { color: 'rgba(163, 230, 53, 0.18)', speed: 0.012, amp: 45, freq: 0.0022, yOffset: height * 0.45 },
-          { color: 'rgba(74, 222, 128, 0.12)', speed: 0.006, amp: 65, freq: 0.0014, yOffset: height * 0.32 }
+          { color: 'rgba(22, 163, 74, 0.22)', speed: 0.008, amp: 45, freq: 0.0018, yOffset: height * 0.38 },
+          { color: 'rgba(132, 204, 22, 0.25)', speed: 0.012, amp: 38, freq: 0.0022, yOffset: height * 0.45 },
+          { color: 'rgba(14, 165, 233, 0.18)', speed: 0.006, amp: 50, freq: 0.0014, yOffset: height * 0.32 }
         ];
 
         lines.forEach(l => {
           ctx.beginPath();
-          ctx.lineWidth = 1.8;
+          ctx.lineWidth = 1.6;
           ctx.strokeStyle = l.color;
 
           for (let x = 0; x < width; x += 6) {
@@ -1240,7 +1275,7 @@
           ctx.stroke();
         });
 
-        step++;
+        step += 1.5;
         requestAnimationFrame(drawWave);
       }
       drawWave();
