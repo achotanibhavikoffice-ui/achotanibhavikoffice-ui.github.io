@@ -50,8 +50,8 @@
   </script>
   
   <style>
-    body {
-      background-color: #070908;
+    html, body {
+      background-color: #070908 !important;
       color: #F3F4F6;
       overflow-x: hidden;
     }
@@ -85,10 +85,11 @@
 
     /* Ambient background gradient mesh */
     .bg-mesh {
-      background: 
-        radial-gradient(circle at 15% 20%, rgba(198, 242, 52, 0.05) 0%, transparent 45%),
-        radial-gradient(circle at 85% 60%, rgba(74, 222, 128, 0.04) 0%, transparent 50%),
-        radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.03) 0%, transparent 40%);
+      background-color: #070908;
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(198, 242, 52, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 60%, rgba(74, 222, 128, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 50% 90%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
     }
 
     /* Pulsing status ring */
@@ -124,7 +125,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans selection:bg-lime-accent selection:text-black bg-mesh">
+<body class="min-h-screen flex flex-col font-sans selection:bg-lime-accent selection:text-black bg-[#070908] bg-mesh text-white">
 
   <!-- Interactive 3D Ambient Wave Canvas -->
   <canvas id="waveCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
